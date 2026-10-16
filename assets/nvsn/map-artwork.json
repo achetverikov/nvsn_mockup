@@ -1,0 +1,83 @@
+{
+  "generator": "Built-in imagegen",
+  "purpose": "Simple white outline ornaments for the original dark NVSN map",
+  "prompt": "A square sprite sheet on a perfectly solid PURE BLACK (#000000) background. Four clean WHITE MONOLINE OUTLINE illustrations in a spacious 2x2 grid: top left an S-shaped sea serpent with a dragon head and curled tail; top right a kraken with six curling tentacles; bottom left an old two-sailed ship; bottom right an eight-point compass rose. Very simple old sea-chart line drawings. Only thin smooth WHITE pen strokes on BLACK. All interiors of the shapes stay BLACK, matching the background. No filled silhouettes. No texture, hatching, shading, grey areas, speckles, distressed effects, text or paper. Each subject centered with ample empty black space around it and clear gutters between the quadrants. The whole sheet should look like four spare white chalk outlines on clean black glass. Make the strokes bold enough to read at small icon sizes, but keep each figure airy and unfilled. High resolution. Opaque pure black background throughout.",
+  "source": "unused/uploads/map-ornaments-white-lines-source.png",
+  "processing": "Crop the 2 by 2 sheet into quadrants, trim black padding, and downsize each to at most 384 pixels using Lanczos. Export WebP at quality 90. SVG luminance masks make black pixels transparent and render the lines in the map's pale text colour.",
+  "drafts": [
+    {
+      "source": "unused/uploads/map-ornaments-source.png",
+      "prompt": "Use case: stylized-concept. Asset type: transparent high-resolution sprite sheet of FOUR maritime chart ornaments for a dark Nordic vision-science website. Input image is ONLY a palette and map context reference; do not redraw the map itself. Create a square 2 by 2 sprite sheet, the largest practical resolution: top-left a beautifully detailed S-shaped sea serpent with a Nordic dragon head, finned neck, coiled body and fish tail; top-right an elegant kraken with an expressive small mantle and curling tentacles; bottom-left a small historic Nordic sailing ship with two sails, hull and tiny engraved waves; bottom-right a refined eight-point antique compass rose with thin concentric circles, no letters. Each object isolated in its OWN quadrant, centered, with generous fully transparent padding and no crossing quadrant boundaries. Entire background genuinely transparent, including between tentacles and compass spokes; no paper, no checkerboard, no square panels, no frames, no captions, no typography, no map. Style: sophisticated 16th-century copperplate sea-chart engraving, flowing organic silhouettes, precise fine crosshatching, hand-inked illustrative richness. Adapt to the supplied modern dark map: pale desaturated sage-green and restrained aged brass highlights, deep navy shadow details; readable against near-black navy #060c18. Not bright yellow, not beige parchment, not cute cartoon, not photorealistic, not heavy black outlines. Balance fine high-resolution engraving with clear silhouettes so sprites remain legible downsized to 60-120 pixels. Same visual family and line weight across all four ornaments.",
+      "status": "Detailed engraving draft, superseded by simple outlines"
+    },
+    {
+      "source": "unused/uploads/map-ornaments-outline-source.png",
+      "prompt": "Use case: style-transfer. Edit target: the supplied 2 by 2 maritime ornament sheet. Redraw these four subjects as exceptionally simple, elegant WHITE LINE OUTLINES for a small modern dark navy map. Top-left: coiled Nordic sea serpent. Top-right: curling kraken. Bottom-left: small sailing ship. Bottom-right: eight-point compass rose without letters. Use ONLY off-white single-weight hand-drawn strokes, with FULLY TRANSPARENT unfilled interiors and background. No solid coloured bodies, no grey fills, no gold, no shadows, no engraving texture, no crosshatching, no scales, no dense details. Aim for sparse confident pen outlines that remain crisp when each subject is shown at 50 to 100 pixels. Sea serpent has expressive head and simple flowing S-shaped body; kraken has a small mantle and a few curling tentacles; ship has hull, mast, two outlined sails and two short wave strokes; compass has eight slim outlined points and one circle. All four should feel like one coherent collection of pale ink sea-chart doodles, understated enough for a scientific network website. Square sheet, four equal quadrants. IMPORTANT: each drawing must fit within the inner 70 percent of its own quadrant, with very generous transparent gutters and no crossing quadrant boundaries. Highest practical resolution. Preserve a genuinely transparent background and transparency INSIDE every outline. No black background, no paper, no panels, no text, no watermark.",
+      "status": "Rejected transparency artifacts"
+    },
+    {
+      "source": "unused/uploads/map-ornaments-line-source.png",
+      "prompt": "Create a clean transparent PNG sprite sheet with FOUR SIMPLE WHITE LINE DRAWINGS arranged in a spacious 2 by 2 grid. Top left: a friendly old sea-chart serpent with a curled S body and small dragon head. Top right: a kraken with a small pointed mantle and six curling tentacles. Bottom left: a small old sailing ship, hull and two sails. Bottom right: an eight-point compass rose. Draw each subject with a few confident, smooth, evenly weighted WHITE OUTLINE STROKES ONLY, like a minimal pen illustration or nautical pictogram. Every interior is unfilled and transparent. Pure white strokes and transparent pixels only. Crisp and clean, absolutely NO texture, NO speckles, NO hatching, NO solid white silhouettes, NO coloured lines, NO white cloudy areas, NO shading, NO shadows, NO backdrop, NO text. These will overlay an existing dark navy website map and must remain readable downsized to 70 pixels. Same simple line weight throughout. Each subject centered within the inner 65% of its own equal quadrant with very generous empty transparent padding and clean transparent gutters between them. Square high resolution sheet, true alpha transparency.",
+      "status": "Rejected transparency artifacts"
+    }
+  ],
+  "source_dimensions": [
+    1254,
+    1254
+  ],
+  "source_sha256": "c5827ddc84bce18624a2450feae8a18b20a47edde28eaa4e147b9ae4568165d5",
+  "exports": [
+    {
+      "file": "assets/nvsn/map-serpent.webp",
+      "source_dimensions": [
+        536,
+        523
+      ],
+      "dimensions": [
+        384,
+        375
+      ],
+      "bytes": 20570,
+      "sha256": "5e1c2932fc236f2f7b968b549cb0ce47a6a5da16e41c6b142e4b115a365d052c"
+    },
+    {
+      "file": "assets/nvsn/map-kraken.webp",
+      "source_dimensions": [
+        535,
+        496
+      ],
+      "dimensions": [
+        384,
+        356
+      ],
+      "bytes": 22130,
+      "sha256": "ca783e8bb5633a3284e82d1a63b61f420c2251bd6d8f357e2c71197233ec809c"
+    },
+    {
+      "file": "assets/nvsn/map-ship.webp",
+      "source_dimensions": [
+        549,
+        548
+      ],
+      "dimensions": [
+        384,
+        383
+      ],
+      "bytes": 19814,
+      "sha256": "56cf81e59dd5e14c9ed0486b04d20fd4329d5a1779eb933167f609c898cbf7a9"
+    },
+    {
+      "file": "assets/nvsn/map-compass.webp",
+      "source_dimensions": [
+        516,
+        507
+      ],
+      "dimensions": [
+        384,
+        377
+      ],
+      "bytes": 16914,
+      "sha256": "343711eb9140a936f9a20057b816387ce6d84b30d348215720917c8c88b0be22"
+    }
+  ]
+}

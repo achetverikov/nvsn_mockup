@@ -11,7 +11,7 @@ const CITIES = [
   { city: 'Lund', lat: 55.7, lon: 13.19, country: 'Sweden', side: 'r', dy: -6 },
   { city: 'Copenhagen', lat: 55.68, lon: 12.57, country: 'Denmark', side: 'r', dy: 12 },
   { city: 'Aalborg', lat: 57.05, lon: 9.92, country: 'Denmark', side: 'l' },
-  { city: 'Aarhus', lat: 56.16, lon: 10.2, country: 'Denmark', side: 'r' },
+  { city: 'Aarhus', lat: 56.16, lon: 10.2, country: 'Denmark', side: 'r', dy: -12 },
   { city: 'Odense', lat: 55.4, lon: 10.39, country: 'Denmark', side: 'l' }
 ];
 const members = [...window.NVSN_CONTENT.labs, ...window.NVSN_CONTENT.youngScientists];
@@ -89,7 +89,7 @@ function draw() {
   svg.attr('viewBox', `0 0 ${width} ${height}`);
   svg.selectAll('*').remove();
   const box = { type: 'MultiPoint', coordinates: [[-24.5, 66.5], [-24.5, 63.3], [28.5, 61], [27, 55.6], [8, 54.6], [15, 66.5]] };
-  projection = d3.geoConicConformal().parallels([55, 65]).rotate([-5, 0]).fitExtent([[28, 28], [width - 28, height - 28]], box);
+  projection = d3.geoConicConformal().parallels([55, 65]).rotate([-5, 0]).fitExtent([[28, 28], [width - 28, height - 28]], box).clipExtent([[0, 0], [width, height]]);
   const path = d3.geoPath(projection);
   const positions = new Map();
   const placedPoints = [];
@@ -105,6 +105,7 @@ function draw() {
     positions.set(city.city, { point, marker });
     placedPoints.push(marker);
   }
+  const chart = window.drawNvsnChart(svg, projection, positions, width, height);
   svg.append('g').attr('aria-hidden', 'true').selectAll('path').data(world.features).join('path')
     .attr('d', path).attr('fill', d => COUNTRY_IDS.has(d.id) ? '#13243f' : '#0b1527')
     .attr('stroke', d => COUNTRY_IDS.has(d.id) ? 'rgba(232,236,240,.38)' : 'rgba(232,236,240,.12)')
@@ -153,7 +154,9 @@ function draw() {
   cityLabels.each(function(city) {
     const label = d3.select(this), box = this.getBBox();
     const [x, y] = positions.get(city.city).marker;
-    labels.push({ label, x: x + box.x, y: y + box.y, width: box.width, height: box.height, originalY: +label.attr('y') });
+    const left = Math.max(5, Math.min(width - box.width - 5, x + box.x));
+    label.attr('x', +label.attr('x') + left - x - box.x);
+    labels.push({ label, x: left, y: y + box.y, width: box.width, height: box.height, originalY: +label.attr('y') });
   });
   labels.sort((a, b) => a.y - b.y);
   const placed = [];
@@ -171,6 +174,7 @@ function draw() {
     label.label.attr('y', label.originalY + shift);
     placed.push({ ...label, y: label.y + shift });
   }
+  chart.finish(placed);
 }
 
 draw();
