@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nordic Vision Science Network</title>
 <meta name="description" content="The Nordic Vision Science Network connects vision researchers across the Nordic region through collaboration, knowledge exchange and network meetings.">
-<script src="./nvsn-content.js?v=20261016-members-2" charset="utf-8"></script>
+<script src="./nvsn-content.js?v=20261016-headers" charset="utf-8"></script>
 <script src="./support.js"></script>
 </head>
 <body>
@@ -227,7 +227,7 @@ class Component extends DCLogic {
     const daysLeft = Math.max(0, Math.ceil((new Date(2026, 11, 7) - new Date()) / 864e5));
     return {
       title: page?.title ?? 'Page not found', kicker: page?.kicker ?? 'Nordic Vision Science Network', source: page?.source ?? '', hasSource: !!page,
-      headerImage: page?.header ?? 'assets/nvsn-header.png', heroClass: page?.header ? 'meeting-hero' : '', articleClass: type === 'exchange' ? 'exchange-section' : '',
+      headerImage: page?.header ?? 'assets/nvsn-header.png', heroClass: ['meeting', 'programme'].includes(type) ? 'meeting-hero' : '', articleClass: type === 'exchange' ? 'exchange-section' : '',
       isHome: type === 'home', isMembers: type === 'members', isMeetings: type === 'meetings', isArticle: ['about', 'exchange'].includes(type), isSteering: type === 'steering', isMeeting: type === 'meeting', isProgramme: type === 'programme', notFound: !page,
       menuOpen: this.state.menuOpen, menuClass: this.state.menuOpen ? 'primary-nav is-open' : 'primary-nav', toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })), closeMenu: () => this.setState({ menuOpen: false }),
       tabs: [['Home', 'home'], ['Members', 'members'], ['Exchange', 'exchange'], ['Meetings', 'meetings'], ['About', 'about']].map(([label, id]) => ({ label, href: '#/' + id, current: id === activeNav ? 'page' : undefined })),

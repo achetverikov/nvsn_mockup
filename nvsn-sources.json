@@ -300,5 +300,6 @@
     "Bergen programme room differences retained: Thursday Room 110, other days Rooms 217–218.",
     "Source affiliation differences retained: Dreneva Lab at Aarhus, steering profile at Danish Technical University."
   ],
-  "generated_images_manifest": "assets/nvsn/generated-images.json"
+  "generated_images_manifest": "assets/nvsn/generated-images.json",
+  "generated_headers_manifest": "assets/nvsn/generated-headers.json"
 }

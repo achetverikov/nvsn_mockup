@@ -123,7 +123,8 @@ window.NVSN_CONTENT = {
           "image": "assets/nvsn/exchange-mobility-landscape.png",
           "hasImage": true
         }
-      ]
+      ],
+      "header": "assets/nvsn/exchange-header-painted.webp"
     },
     "home": {
       "id": "home",
@@ -714,7 +715,8 @@ window.NVSN_CONTENT = {
           "image": "assets/nvsn/about-10.png",
           "hasImage": true
         }
-      ]
+      ],
+      "header": "assets/nvsn/about-header-painted.webp"
     },
     "steering": {
       "id": "steering",
@@ -838,7 +840,8 @@ window.NVSN_CONTENT = {
           "image": "assets/nvsn/steering-08.png",
           "hasImage": true
         }
-      ]
+      ],
+      "header": "assets/nvsn/about-header-painted.webp"
     },
     "meetings": {
       "id": "meetings",
@@ -1108,7 +1111,7 @@ window.NVSN_CONTENT = {
           "hasImage": true
         }
       ],
-      "header": "assets/nvsn/meetings-header.jpg"
+      "header": "assets/nvsn/meetings-header-painted.webp"
     },
     "meeting-2025": {
       "id": "meeting-2025",
@@ -4098,7 +4101,8 @@ window.NVSN_CONTENT = {
           "image": "assets/nvsn/members-09.jpg",
           "hasImage": true
         }
-      ]
+      ],
+      "header": "assets/nvsn/members-header-painted.webp"
     }
   },
   "labs": [

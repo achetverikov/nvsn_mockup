@@ -1,0 +1,108 @@
+{
+  "tool": "built-in imagegen",
+  "aspect_ratio": "3:1",
+  "export": "WebP quality 88, maximum width 1800 pixels, high-resolution PNG masters retained.",
+  "assets": [
+    {
+      "page": "members",
+      "path": "assets/nvsn/members-header-painted.webp",
+      "master": "unused/uploads/headers/members-header-painted-source.png",
+      "references": [
+        "assets/nvsn-header.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: wide panoramic website header, EXACTLY 3:1 aspect ratio, single continuous composition. Match ONLY the reference's hand-painted technique and palette: layered oil-pastel and dry-brush strokes, tangible soft paper grain, midnight navy and indigo, desaturated jade/sea-green light, subtle dusky violet and warm ochre accents, tiny star-like points. Poetic and sophisticated, softly luminous, not flat vector art, not photorealism, not glossy 3D. The subject MUST BE DIFFERENT from the reference: NO mountains, NO sea, NO water, NO fjords, NO coastal landscape, NO giant eye. Keep the left third and lower-left dark, quiet and uncluttered for white webpage text. Put the main subject toward 65-75 percent across so it survives a phone crop. No readable writing, lettering, captions, numbers, logos, decorative frame, watermark, collage or UI. One opaque finished panoramic painting. Subject: people collaborating in vision science. An imaginative interior of a research atelier at night: three or four small anonymous human figures working together around a shared long laboratory workbench, with a few simple optical lenses, a small monitor showing abstract coloured shapes without text, and an elegant tall adjustable task lamp. Suggest a Nordic university through clean understated interior architecture, not outside scenery. Gentle green-violet strokes of light weave high through the dark room, joining the researchers like a subtle network of ideas. Warm pinpricks of lamplight on the workbench contrast with the cool painterly background. People and optical workbench occupy the middle-right, left side is deep atmospheric indigo negative space. The composition should immediately read as a community of researchers rather than a landscape.",
+      "source_dimensions": [
+        2172,
+        724
+      ],
+      "source_sha256": "d9a144c99241b53541d14ad425fb12f2b593aaabce02f4fb6fab80dfac51825c",
+      "dimensions": [
+        1800,
+        600
+      ],
+      "bytes": 210076,
+      "sha256": "02bad19eb2f0e1c4e90775d52f6051187ac0a2b1bde2837be0f8638b7034c230"
+    },
+    {
+      "page": "exchange",
+      "path": "assets/nvsn/exchange-header-painted.webp",
+      "master": "unused/uploads/headers/exchange-header-painted-source.png",
+      "references": [
+        "assets/nvsn-header.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: wide panoramic website header, EXACTLY 3:1 aspect ratio, single continuous composition. Match ONLY the reference's hand-painted technique and palette: layered oil-pastel and dry-brush strokes, tangible soft paper grain, midnight navy and indigo, desaturated jade/sea-green light, subtle dusky violet and warm ochre accents, tiny star-like points. Poetic and sophisticated, softly luminous, not flat vector art, not photorealism, not glossy 3D. The subject MUST BE DIFFERENT from the reference: NO mountains, NO sea, NO water, NO fjords, NO coastal landscape, NO giant eye. Keep the left third and lower-left dark, quiet and uncluttered for white webpage text. Put the main subject toward 65-75 percent across so it survives a phone crop. No readable writing, lettering, captions, numbers, logos, decorative frame, watermark, collage or UI. One opaque finished panoramic painting. Subject: exchange of knowledge, expressed through optical light. A sculptural arrangement of two large translucent glass prisms and a small curved lens, floating against a deep indigo painterly background. A broad softly brushed ribbon of jade light enters one prism, separates into restrained jade, violet and warm gold strands, then passes through the second prism and rejoins into an elegant shared flowing stream. Add a few tiny starlike connection points along the light paths. Let the light ribbons have the same organic hand-painted brushwork as the reference's aurora, but form an abstract optical exchange, NOT a night landscape. Main prisms toward the middle-right, restrained light streams reaching into dark space on the left. Clear, thoughtful and atmospheric; no people, buildings or scenery.",
+      "source_dimensions": [
+        2172,
+        724
+      ],
+      "source_sha256": "ccab1b0edc8ac3e6a77326e551d9b48b59b00e54f051fd05584387ff140fa5c5",
+      "dimensions": [
+        1800,
+        600
+      ],
+      "bytes": 166390,
+      "sha256": "779a0534d05ce9280fd685d707e5e5c36a68ca96dd54f4fe1f08ea618d8c4a66"
+    },
+    {
+      "page": "about",
+      "path": "assets/nvsn/about-header-painted.webp",
+      "master": "unused/uploads/headers/about-header-painted-source.png",
+      "references": [
+        "assets/nvsn-header.png"
+      ],
+      "prompt": "Use case: stylized-concept. Asset type: wide panoramic website header, EXACTLY 3:1 aspect ratio, single continuous composition. Match ONLY the reference's hand-painted technique and palette: layered oil-pastel and dry-brush strokes, tangible soft paper grain, midnight navy and indigo, desaturated jade/sea-green light, subtle dusky violet and warm ochre accents, tiny star-like points. Poetic and sophisticated, softly luminous, not flat vector art, not photorealism, not glossy 3D. The subject MUST BE DIFFERENT from the reference: NO mountains, NO sea, NO water, NO fjords, NO coastal landscape, NO giant eye. Keep the left third and lower-left dark, quiet and uncluttered for white webpage text. Put the main subject toward 65-75 percent across so it survives a phone crop. No readable writing, lettering, captions, numbers, logos, decorative frame, watermark, collage or UI. One opaque finished panoramic painting. Subject: the beginnings and developing story of a scientific network. A beautifully simple open research notebook on a dark wooden desk, with a pencil and a small warm-glowing desk lamp. The notebook contains only a few hand-sketched circles and connecting lines, absolutely no written words. From those initial pencilled connections, a delicate constellation of starlike nodes rises into the dark air and becomes a broad hand-painted jade and violet ribbon of light, suggesting an idea growing into a network. Place the notebook and warm lamp around the middle-right with the emerging constellation above; keep the left half atmospheric, dark and spare. Intimate, reflective and human, rendered in the reference's textured painterly style. No people, outdoor view, landscape, mountains or water.",
+      "source_dimensions": [
+        2172,
+        724
+      ],
+      "source_sha256": "0c2ac74802d31310519a2e8f356d7e506679b2a6d3bd6be2660209a426389d77",
+      "dimensions": [
+        1800,
+        600
+      ],
+      "bytes": 209138,
+      "sha256": "ea9c51b710b69391878247bc6e4814076890d55fa0fa9c932edb820e99651eb3"
+    },
+    {
+      "page": "meetings",
+      "path": "assets/nvsn/meetings-header-painted.webp",
+      "master": "unused/uploads/headers/meetings-header-painted-source.png",
+      "references": [
+        "assets/nvsn-header.png",
+        "assets/nvsn/meetings-header.jpg"
+      ],
+      "prompt": "Use case: style-transfer. Asset type: panoramic website hero banner, EXACT aspect ratio 3:1. Image 1 is the required drawing-style and palette reference, the existing MAIN website header. Image 2 is the edit target, the existing Meetings overview header. Redraw the Meetings aurora landscape in the hand-painted style of Image 1: visible dry-brush and oil-pastel strokes, paper grain, tiny pale stars, midnight-navy shadows, softly luminous desaturated jade/sea-green auroras with subtle violet and muted ochre accents. Preserve the subject of sweeping aurora curtains over layered Nordic hills and water, but replace the glossy neon-green ribbons and laserlike vertical highlights with natural, broad, irregular, brushed aurora bands and soft reflected light. It should unmistakably belong beside the main painted eye header without including an eye. Wide breathing space on the left for a white page title; graceful aurora and mountain shapes on the middle-right. Dark, calm and atmospheric; no synthetic gloss, no fluorescent green, no photorealism, no labels, no text, no logos, no border, no watermark. One opaque finished panoramic painting.",
+      "source_dimensions": [
+        2172,
+        724
+      ],
+      "source_sha256": "de5b4c803f2dc8f58d4f1b0424cca990881ff049b8858301e3d7ce89e3c92ea0",
+      "dimensions": [
+        1800,
+        600
+      ],
+      "bytes": 203490,
+      "sha256": "aa6c8f8eba9d92636118b5f484f449c66689ffc3da95f7f877f3e5cf9c3eb9d4"
+    }
+  ],
+  "drafts": [
+    {
+      "page": "members",
+      "path": "unused/uploads/headers/members-header-draft.png",
+      "prompt": "Use case: stylized-concept. Asset type: panoramic website hero banner, EXACT aspect ratio 3:1, wide horizontal composition. The reference is ONLY a drawing-style and colour reference from the website's main header. Match its richly hand-painted Nordic night illustration: visible soft oil-pastel and dry-brush strokes, subtle paper grain, deep midnight navy and indigo, desaturated jade and sea-green aurora with restrained dusky-violet and warm-ochre accents, tiny pale stars, softly luminous reflected light. Quiet, imaginative and painterly, neither photographic nor glossy 3D, not flat geometric vector art. Do not reproduce the giant eye from the reference. Compose for a website heading overlay: left third and lower-left stay relatively dark and uncluttered; most narrative detail sits around the middle-right at 65 to 75 percent across, and remains visible when the banner is cropped on a narrow phone screen. No words, lettering, typography, logos, frames, split panels, watermark or UI. One finished opaque panoramic painting. Subject: members of a Nordic research network. Paint a calm midnight fjord with several small Nordic university and laboratory buildings along an archipelago of distant dark shores. A few small, anonymous human silhouettes on a shoreline terrace look across the water. The windows glow very faintly with warm light. Fine starlike nodes and gentle connecting arcs emerge naturally among the aurora ribbons above the scattered buildings, suggesting researchers connected across Nordic countries. Make the community motif readable without portrait faces, maps, labels or diagram-like graphics. The sky and reflective water occupy much of the panorama, in the same poetic visual world as the reference.",
+      "status": "Superseded: repeated the main header's sea and mountain content."
+    },
+    {
+      "page": "exchange",
+      "path": "unused/uploads/headers/exchange-header-draft.png",
+      "prompt": "Use case: stylized-concept. Asset type: panoramic website hero banner, EXACT aspect ratio 3:1, wide horizontal composition. The reference is ONLY a drawing-style and colour reference from the website's main header. Match its richly hand-painted Nordic night illustration: visible soft oil-pastel and dry-brush strokes, subtle paper grain, deep midnight navy and indigo, desaturated jade and sea-green aurora with restrained dusky-violet and warm-ochre accents, tiny pale stars, softly luminous reflected light. Quiet, imaginative and painterly, neither photographic nor glossy 3D, not flat geometric vector art. Do not reproduce the giant eye from the reference. Compose for a website heading overlay: left third and lower-left stay relatively dark and uncluttered; most narrative detail sits around the middle-right at 65 to 75 percent across, and remains visible when the banner is cropped on a narrow phone screen. No words, lettering, typography, logos, frames, split panels, watermark or UI. One finished opaque panoramic painting. Subject: knowledge exchange, travel and collaboration between Nordic universities. Paint a small, elegant sailing vessel crossing still dark fjord water between two distant inhabited Nordic shores, with a tiny warm-lit university silhouette on either side. Broad soft jade and violet aurora ribbons flow across the sky, meeting in a luminous but restrained arc over the boat; their reflections suggest a route linking the shores. Put the vessel and the meeting of the lights at the middle-right, with an open night sky and dark sea on the left. It should evoke shared learning and journeys, with no books, literal arrows, flags or diagrams.",
+      "status": "Superseded: repeated the main header's sea and mountain content."
+    },
+    {
+      "page": "about",
+      "path": "unused/uploads/headers/about-header-draft.png",
+      "prompt": "Use case: stylized-concept. Asset type: panoramic website hero banner, EXACT aspect ratio 3:1, wide horizontal composition. The reference is ONLY a drawing-style and colour reference from the website's main header. Match its richly hand-painted Nordic night illustration: visible soft oil-pastel and dry-brush strokes, subtle paper grain, deep midnight navy and indigo, desaturated jade and sea-green aurora with restrained dusky-violet and warm-ochre accents, tiny pale stars, softly luminous reflected light. Quiet, imaginative and painterly, neither photographic nor glossy 3D, not flat geometric vector art. Do not reproduce the giant eye from the reference. Compose for a website heading overlay: left third and lower-left stay relatively dark and uncluttered; most narrative detail sits around the middle-right at 65 to 75 percent across, and remains visible when the banner is cropped on a narrow phone screen. No words, lettering, typography, logos, frames, split panels, watermark or UI. One finished opaque panoramic painting. Subject: the origins and growing story of a Nordic scientific network. Paint a small group of three or four anonymous researchers seen from behind, gathered on a rocky Nordic shore around a modest warm pool of light, looking toward layered mountain silhouettes and a distant coastal town across a quiet fjord. Above them, a few delicate starlike points grow into a loosely connected constellation, interwoven with broad hand-brushed jade and violet aurora. Keep the people small in the landscape and toward the middle-right; this is a poetic communal beginning, with the emphasis on night, water, light and connected curiosity, not on literal historical realism.",
+      "status": "Superseded: repeated the main header's sea and mountain content."
+    }
+  ]
+}
