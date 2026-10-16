@@ -18,7 +18,7 @@ img{display:block;max-width:100%}
 .hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2}
 .hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,12,24,.6),rgba(6,12,24,.12) 65%,transparent);z-index:-1}
 .meeting-hero .hero-image{object-position:center 58%}
-.meeting-hero .hero-image[src$="/meeting-2025-header.png"]{object-position:right bottom}
+.bergen-hero .hero-image{object-position:73% center}
 .meeting-hero .hero-shade{background:linear-gradient(90deg,rgba(1,24,16,.55),rgba(1,24,16,.08)),linear-gradient(0deg,rgba(1,24,16,.2),transparent 60%)}
 .site-header{position:absolute;inset:0 0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px var(--pad);z-index:2}
 .brand{font-size:20px;font-weight:600;letter-spacing:.14em;text-decoration:none}
@@ -174,6 +174,7 @@ img[src$="/members-15.png"]{clip-path:inset(0 .2% 0 .1% round 8px)}
   .primary-nav.is-open{display:flex}
   .nav-link{padding:10px 12px}
   .hero-copy{bottom:32px;max-width:520px}
+  .bergen-hero .hero-copy{top:88px;bottom:auto}
   .hero-copy h1{font-size:clamp(36px,7.7vw,54px)}
   .hero-image{object-position:68% center}
   .hero-shade{background:linear-gradient(90deg,rgba(6,12,24,.72),rgba(6,12,24,.16)),linear-gradient(0deg,rgba(6,12,24,.3),transparent)}
@@ -200,7 +201,13 @@ img[src$="/members-15.png"]{clip-path:inset(0 .2% 0 .1% round 8px)}
   .steering-person h2{font-size:22px}
   .site-footer{flex-direction:column}
 }
-@media(max-width:600px){.lab{grid-template-columns:1fr;gap:16px}.member-detail h2{font-size:30px}.conference-row{grid-template-columns:1fr;gap:20px}.conference-logo{width:100%;max-width:320px}}
+@media(max-width:600px){
+  .lab{grid-template-columns:1fr;gap:16px}
+  .member-detail h2{font-size:30px}
+  .conference-row{grid-template-columns:1fr;gap:20px}
+  .conference-logo{width:100%;max-width:320px}
+  .bergen-hero .hero-image{height:300px;top:auto;bottom:0;object-position:78% center;mask-image:linear-gradient(to bottom,transparent,#000 12%)}
+}
 @media(max-width:420px){
   .hero-copy h1{font-size:40px}
   .steering-grid{grid-template-columns:1fr}

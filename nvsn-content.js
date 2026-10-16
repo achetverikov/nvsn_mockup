@@ -124,7 +124,7 @@ window.NVSN_CONTENT = {
           "hasImage": true
         }
       ],
-      "header": "assets/nvsn/exchange-header-painted.webp"
+      "header": "assets/nvsn/exchange-header-af-klint.webp"
     },
     "home": {
       "id": "home",
@@ -716,7 +716,7 @@ window.NVSN_CONTENT = {
           "hasImage": true
         }
       ],
-      "header": "assets/nvsn/about-header-painted.webp"
+      "header": "assets/nvsn/about-header-astrup-bonfire.webp"
     },
     "steering": {
       "id": "steering",
@@ -841,7 +841,7 @@ window.NVSN_CONTENT = {
           "hasImage": true
         }
       ],
-      "header": "assets/nvsn/about-header-painted.webp"
+      "header": "assets/nvsn/about-header-astrup-bonfire.webp"
     },
     "meetings": {
       "id": "meetings",
@@ -1111,7 +1111,7 @@ window.NVSN_CONTENT = {
           "hasImage": true
         }
       ],
-      "header": "assets/nvsn/meetings-header-painted.webp"
+      "header": "assets/nvsn/meetings-header-aurora.webp"
     },
     "meeting-2025": {
       "id": "meeting-2025",
@@ -1345,7 +1345,7 @@ window.NVSN_CONTENT = {
         }
       ],
       "pending": false,
-      "header": "assets/nvsn/meeting-2025-header.png"
+      "header": "assets/nvsn/meeting-2025-header-wide.webp"
     },
     "meeting-2025/friday": {
       "id": "meeting-2025/friday",
@@ -1645,7 +1645,7 @@ window.NVSN_CONTENT = {
           ]
         }
       ],
-      "header": "assets/nvsn/meeting-2025-header.png"
+      "header": "assets/nvsn/meeting-2025-header-wide.webp"
     },
     "meeting-2025/thursday": {
       "id": "meeting-2025/thursday",
@@ -2105,7 +2105,7 @@ window.NVSN_CONTENT = {
           ]
         }
       ],
-      "header": "assets/nvsn/meeting-2025-header.png"
+      "header": "assets/nvsn/meeting-2025-header-wide.webp"
     },
     "meeting-2025/tuesday": {
       "id": "meeting-2025/tuesday",
@@ -2439,7 +2439,7 @@ window.NVSN_CONTENT = {
           ]
         }
       ],
-      "header": "assets/nvsn/meeting-2025-header.png"
+      "header": "assets/nvsn/meeting-2025-header-wide.webp"
     },
     "meeting-2025/wednesday": {
       "id": "meeting-2025/wednesday",
@@ -2977,7 +2977,7 @@ window.NVSN_CONTENT = {
           ]
         }
       ],
-      "header": "assets/nvsn/meeting-2025-header.png"
+      "header": "assets/nvsn/meeting-2025-header-wide.webp"
     },
     "meeting-2026": {
       "id": "meeting-2026",
@@ -4102,7 +4102,7 @@ window.NVSN_CONTENT = {
           "hasImage": true
         }
       ],
-      "header": "assets/nvsn/members-header-painted.webp"
+      "header": "assets/nvsn/members-header-poster.webp"
     }
   },
   "labs": [
