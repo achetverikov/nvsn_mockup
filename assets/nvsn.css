@@ -94,6 +94,8 @@ img{display:block;max-width:100%}
 .lab{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:24px;align-items:start;padding:24px 0;border-top:1px solid var(--line)}
 .lab-logo{width:100%;border-radius:8px;overflow:hidden;display:block;background:transparent}
 .lab-logo img{width:100%;height:auto;object-fit:contain}
+/* Trim the source image's one white column on the left and two on the right. */
+img[src$="/members-15.png"]{clip-path:inset(0 .2% 0 .1% round 8px)}
 .lab-details-link{display:inline-block;margin-top:12px}
 .lab h3{font:500 17px/1.35 'Instrument Sans',sans-serif;margin-bottom:5px}
 .lab h3 a{text-decoration:none}

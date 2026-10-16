@@ -284,6 +284,15 @@
       "sha256": "95f8a1e634e99363e32a7fc525134065858965ccb3fa65a071e2b7b925664006",
       "bytes": 2601991,
       "role": "original meeting header"
+    },
+    {
+      "source": "https://andreychetverikov.org/img/home-header_hu_6d8b27cd516ff630.jpg",
+      "source_page": "https://andreychetverikov.org/",
+      "path": "assets/nvsn/chetverikov-lab-header.jpg",
+      "sha256": "55a21cbc54c8ed5ce4a9b0a5b90569aaa4ffa822c6622d5a4144a6a01967a2d2",
+      "bytes": 279703,
+      "role": "Chetverikov Lab website header, preserving the website crop and natural proportions",
+      "retrieved_at": "2026-10-16T16:11:59.377542+00:00"
     }
   ],
   "notes": [

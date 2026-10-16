@@ -3859,7 +3859,7 @@ window.NVSN_CONTENT = {
               ]
             }
           ],
-          "image": "assets/nvsn/members-08.png",
+          "image": "assets/nvsn/chetverikov-lab-header.jpg",
           "hasImage": true
         },
         {
@@ -4082,7 +4082,7 @@ window.NVSN_CONTENT = {
         },
         {
           "id": "section-17",
-          "title": "Esra Öncel",
+          "title": "Esra \u00d6ncel",
           "paragraphs": [
             {
               "text": "Department of Clinical Neuroscience at the Karolinska Institutet (Sweden).",
@@ -4162,7 +4162,7 @@ window.NVSN_CONTENT = {
       "contact": "Associate professor Andrey Chetverikov",
       "contactHref": "https://andreychetverikov.org/",
       "href": "https://andreychetverikov.org/",
-      "logo": "assets/nvsn/members-08.png",
+      "logo": "assets/nvsn/chetverikov-lab-header.jpg",
       "description": "Located at Bergen University (Norway).",
       "id": "chetverikov-lab",
       "profileHref": "#/members/chetverikov-lab"
@@ -4350,12 +4350,12 @@ window.NVSN_CONTENT = {
   "youngScientists": [
     {
       "id": "esra-oncel",
-      "name": "Esra Öncel",
+      "name": "Esra \u00d6ncel",
       "uni": "Karolinska Institutet",
       "city": "Stockholm",
       "country": "Sweden",
       "href": "https://ki.se/en/people/esra-oncel",
-      "contact": "Esra Öncel",
+      "contact": "Esra \u00d6ncel",
       "contactHref": "https://ki.se/en/people/esra-oncel",
       "logo": "assets/nvsn/members-09.jpg",
       "description": "Department of Clinical Neuroscience at the Karolinska Institutet (Sweden).",
