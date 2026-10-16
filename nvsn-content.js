@@ -4307,48 +4307,72 @@ window.NVSN_CONTENT = {
     {
       "title": "VSS",
       "body": "The Annual Meeting of the Vision Sciences Society is in May and is typically hosted at St. Pete Beach in Florida. The conference is linked to the journal of vision.",
-      "href": "http://www.visionsciences.org/"
+      "href": "http://www.visionsciences.org/",
+      "image": "assets/nvsn/meetings-06.png",
+      "group": "vision"
     },
     {
       "title": "ECVP",
       "body": "The European Conference on Visual Perception is probably the second largest conference on visual perception and have an annual meeting in august which rotates between different European host cities every year. The conference is linked to the journal perception.",
-      "href": "http://ecvp.org/"
+      "href": "http://ecvp.org/",
+      "image": "assets/nvsn/meetings-10.png",
+      "group": "vision"
     },
     {
       "title": "ASSC",
       "body": "This is an annual conference for the study of consciousness including visual perception and the ASSC is linked to the journal Neuroscience of consciousness.",
-      "href": "https://theassc.org/"
+      "href": "https://theassc.org/",
+      "image": "assets/nvsn/meetings-12.png",
+      "group": "related"
     },
     {
       "title": "IMRF",
       "body": "The International Multisensory Research Forum is a platform for researchers interested in the sensory modalities including vision, and hosts an annual meeting in different cities worldwide.",
-      "href": "https://imrf.info/"
+      "href": "https://imrf.info/",
+      "image": "assets/nvsn/meetings-14.png",
+      "group": "related"
     },
     {
       "title": "ESCOP",
       "body": "The European Society for Cognitive Psychology hosts a bi-annual meeting in different European cities. The conference is linked to the journal of cognition.",
-      "href": "https://www.escop.eu/"
+      "href": "https://www.escop.eu/",
+      "image": "assets/nvsn/meetings-16.png",
+      "group": "related"
     },
     {
       "title": "TEAP",
       "body": "Tagung experimentell arbeitender Psychologen is an annual conference for experimental psychology hosted in different cities in Germany. While the conference originally started out as a German conference in 1959 it is now in English and typically host a range of interesting vision research.",
-      "href": "https://www.teap.de/"
+      "href": "https://www.teap.de/",
+      "image": "assets/nvsn/meetings-18.png",
+      "group": "related"
     }
   ],
   "youngScientists": [
     {
       "id": "esra-oncel",
-      "name": "Esra ?ncel",
+      "name": "Esra Öncel",
       "uni": "Karolinska Institutet",
       "city": "Stockholm",
       "country": "Sweden",
       "href": "https://ki.se/en/people/esra-oncel",
-      "contact": "Esra ?ncel",
+      "contact": "Esra Öncel",
       "contactHref": "https://ki.se/en/people/esra-oncel",
       "logo": "assets/nvsn/members-09.jpg",
       "description": "Department of Clinical Neuroscience at the Karolinska Institutet (Sweden).",
       "profileHref": "#/members/esra-oncel",
       "young": true
+    }
+  ],
+  "conferenceGroups": [
+    {
+      "id": "vision",
+      "title": "Vision conferences",
+      "intro": "Here is an overview of some of the relevant conferences and symposia that have an emphasis on vision research."
+    },
+    {
+      "id": "related",
+      "title": "Related conferences",
+      "intro": "In addition to the main conferences there are a range of conferences that also include an element of vision science."
     }
   ]
 };

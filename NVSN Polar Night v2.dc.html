@@ -86,7 +86,14 @@
 
 <sc-if value="{{ isMeetings }}">
   <section class="section"><div class="section-heading"><h2>Network meetings</h2></div><div class="meeting-list"><sc-for list="{{ meetings }}" as="meeting" hint-placeholder-count="2"><a class="meeting-card" href="{{ meeting.href }}"><img sc-camel-src="{{ meeting.image }}" alt="" loading="lazy"><span class="eyebrow">{{ meeting.edition }}</span><h3>{{ meeting.city }}, {{ meeting.dates }}</h3><p>Hosted by {{ meeting.venue }}</p><p>Local organisers: {{ meeting.organisers }}</p><span class="muted">{{ meeting.registration }}</span><span class="text-link">Meeting details & programme →</span></a></sc-for></div></section>
-  <section class="section"><div class="section-heading"><h2>Conferences & symposia</h2></div><p class="muted">Conferences with an emphasis on vision research, and related meetings that include vision science.</p><div style="margin-top:24px"><sc-for list="{{ conferences }}" as="conference" hint-placeholder-count="6"><article class="conference-row"><h3><a href="{{ conference.href }}">{{ conference.title }} ↗</a></h3><p>{{ conference.body }}</p></article></sc-for></div></section>
+  <sc-for list="{{ conferenceGroups }}" as="group" hint-placeholder-count="2">
+    <section class="section conference-section">
+      <div class="section-heading"><h2>{{ group.title }}</h2></div><p class="muted">{{ group.intro }}</p>
+      <div class="conference-list"><sc-for list="{{ group.conferences }}" as="conference" hint-placeholder-count="2">
+        <article class="conference-row"><a class="conference-logo" href="{{ conference.href }}" tabindex="-1" aria-hidden="true"><img sc-camel-src="{{ conference.image }}" alt="" loading="lazy"></a><div><h3><a href="{{ conference.href }}">{{ conference.title }} ↗</a></h3><p>{{ conference.body }}</p></div></article>
+      </sc-for></div>
+    </section>
+  </sc-for>
 </sc-if>
 
 <sc-if value="{{ isMeeting }}">
@@ -224,7 +231,7 @@ class Component extends DCLogic {
       menuOpen: this.state.menuOpen, menuClass: this.state.menuOpen ? 'primary-nav is-open' : 'primary-nav', toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })), closeMenu: () => this.setState({ menuOpen: false }),
       tabs: [['Home', 'home'], ['Members', 'members'], ['Exchange', 'exchange'], ['Meetings', 'meetings'], ['About', 'about']].map(([label, id]) => ({ label, href: '#/' + id, current: id === activeNav ? 'page' : undefined })),
       showAboutNav: ['about', 'steering'].includes(route), aboutCurrent: route === 'about' ? 'page' : undefined, steeringCurrent: route === 'steering' ? 'page' : undefined,
-      articleSections, steering: this.content.steering, conferences: this.content.conferences, meetings, youngScientists: this.content.youngScientists,
+      articleSections, steering: this.content.steering, conferenceGroups: this.content.conferenceGroups.map(group => ({ ...group, conferences: this.content.conferences.filter(conference => conference.group === group.id) })), meetings, youngScientists: this.content.youngScientists,
       hasSelectedMember: !!member, showDirectory: !member, selectedMember: member ? { ...member, kindLabel: member.young ? 'Young network scientist' : 'Network research group' } : {},
       meeting: type === 'meeting' ? page : { documents: [], days: [] }, programme: type === 'programme' ? page : { sessions: [] },
       programmeDays: type === 'programme' ? page.days.map(day => ({ ...day, current: day.href === '#/' + route ? 'page' : undefined })) : [],

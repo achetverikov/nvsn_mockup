@@ -120,9 +120,12 @@ img{display:block;max-width:100%}
 .meeting-card img{width:100%;aspect-ratio:2;object-fit:cover;border-radius:8px;margin-bottom:6px}
 .meeting-card h3{font-size:30px}
 .meeting-card p{color:var(--muted)}
-.conference-row{display:grid;grid-template-columns:120px minmax(0,1fr);gap:24px;align-items:baseline;border-top:1px solid var(--line);padding:24px 0}
+.conference-list{margin-top:24px}
+.conference-row{display:grid;grid-template-columns:260px minmax(0,1fr);gap:32px;align-items:center;border-top:1px solid var(--line);padding:24px 0}
+.conference-logo{display:block;overflow:hidden;border-radius:8px}
+.conference-logo img{width:100%;height:auto;object-fit:contain}
 .conference-row h3{font-family:'Instrument Sans',sans-serif;font-size:18px;font-weight:600}
-.conference-row p{color:#bbc6d1;max-width:78ch}
+.conference-row p{color:#bbc6d1;max-width:78ch;margin-top:8px}
 .meeting-feature{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:start}
 .meeting-feature figure img{width:100%;border-radius:8px;aspect-ratio:1.5;object-fit:cover}
 .meeting-feature figcaption{color:var(--muted);font-size:12px;margin-top:8px}
@@ -190,16 +193,15 @@ img{display:block;max-width:100%}
   .country-cities{display:block;font-size:13px}
   .day-list{grid-template-columns:repeat(2,minmax(0,1fr))}
   .programme-event{grid-template-columns:130px minmax(0,1fr);gap:16px}
-  .conference-row{grid-template-columns:80px minmax(0,1fr);gap:16px}
+  .conference-row{grid-template-columns:180px minmax(0,1fr);gap:24px}
   .steering-person h2{font-size:22px}
   .site-footer{flex-direction:column}
 }
-@media(max-width:600px){.lab{grid-template-columns:1fr;gap:16px}.member-detail h2{font-size:30px}}
+@media(max-width:600px){.lab{grid-template-columns:1fr;gap:16px}.member-detail h2{font-size:30px}.conference-row{grid-template-columns:1fr;gap:20px}.conference-logo{width:100%;max-width:320px}}
 @media(max-width:420px){
   .hero-copy h1{font-size:40px}
   .steering-grid{grid-template-columns:1fr}
   .programme-event{grid-template-columns:1fr;gap:6px}
-  .conference-row{grid-template-columns:1fr;gap:8px}
   .day-card{padding:16px 12px}
   .day-card strong{font-size:22px}
   .section-heading{align-items:flex-start}
