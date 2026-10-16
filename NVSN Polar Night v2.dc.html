@@ -220,7 +220,8 @@ class Component extends DCLogic {
       const labs = this.content.labs.filter(l => l.country === country);
       return { country, count: labs.length, cities: [...new Set(labs.map(l => l.city))].join(', '), onClick: () => { this.setState({ filter: country }); window.location.hash = '/members'; } };
     });
-    const articleSections = ['about', 'exchange'].includes(type) ? page.sections.map(section => ({ ...section, layout: section.hasImage ? 'with-image' : 'text-only', paragraphs: section.paragraphs.map(p => ({ ...p, tokens: p.tokens.map(token => ({ ...token, plain: !token.linked })) })) })) : [];
+    const sections = type === 'about' ? [...page.sections].reverse() : page?.sections;
+    const articleSections = ['about', 'exchange'].includes(type) ? sections.map(section => ({ ...section, layout: section.hasImage ? 'with-image' : 'text-only', paragraphs: section.paragraphs.map(p => ({ ...p, tokens: p.tokens.map(token => ({ ...token, plain: !token.linked })) })) })) : [];
     const meetings = ['meeting-2026', 'meeting-2025'].map(id => ({ ...this.content.pages[id], href: '#/' + id, edition: id.endsWith('2026') ? 'Second NVSN meeting · Upcoming' : 'First NVSN meeting · Archive', registration: id.endsWith('2026') ? 'Sign-up and deadline to be announced' : 'Registration closed · deadline was 7 May 2025' }));
     const about = this.content.pages.about.sections;
     const daysLeft = Math.max(0, Math.ceil((new Date(2026, 11, 7) - new Date()) / 864e5));
