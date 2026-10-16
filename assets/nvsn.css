@@ -18,6 +18,7 @@ img{display:block;max-width:100%}
 .hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:-2}
 .hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,12,24,.6),rgba(6,12,24,.12) 65%,transparent);z-index:-1}
 .meeting-hero .hero-image{object-position:center 58%}
+.meeting-hero .hero-image[src$="/meeting-2025-header.png"]{object-position:right bottom}
 .meeting-hero .hero-shade{background:linear-gradient(90deg,rgba(1,24,16,.55),rgba(1,24,16,.08)),linear-gradient(0deg,rgba(1,24,16,.2),transparent 60%)}
 .site-header{position:absolute;inset:0 0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px var(--pad);z-index:2}
 .brand{font-size:20px;font-weight:600;letter-spacing:.14em;text-decoration:none}
