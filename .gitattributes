@@ -1,0 +1,3 @@
+# Preserve recorded hashes for third-party resources and archived originals.
+assets/vendor/** -text
+unused/** -text
