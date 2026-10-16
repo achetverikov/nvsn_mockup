@@ -1,233 +1,254 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nordic Vision Science Network</title>
+<meta name="description" content="The Nordic Vision Science Network connects vision researchers across the Nordic region through collaboration, knowledge exchange and network meetings.">
+<script src="./nvsn-content.js"></script>
 <script src="./support.js"></script>
 </head>
 <body>
+<noscript>This site needs JavaScript. Visit the <a href="https://sites.google.com/view/nvsn/home">original NVSN website</a> for network information.</noscript>
 <x-dc>
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:#03070f;-webkit-font-smoothing:antialiased}
-a{color:inherit;text-decoration:underline;text-decoration-color:rgba(232,236,240,.3);text-underline-offset:3px}
-a:hover{text-decoration-color:oklch(0.86 0.083 160)}
-button{font:inherit}
-</style>
+<link rel="stylesheet" href="./assets/nvsn.css">
 </helmet>
-<div data-screen-label="Polar night v2" style="max-width:1280px;margin:0 auto;background:#060c18;color:#e8ecf0;font-family:'Instrument Sans',sans-serif;font-size:16px;line-height:1.55">
+<div data-screen-label="Polar night v2" class="site">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="hero {{ heroClass }}">
+  <img class="hero-image" sc-camel-src="{{ headerImage }}" alt="" fetchpriority="high">
+  <div class="hero-shade" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#/home" aria-label="NVSN home">NVSN</a>
+    <button class="menu-toggle" onClick="{{ toggleMenu }}" aria-expanded="{{ menuOpen }}" aria-controls="primary-navigation">Menu</button>
+    <nav id="primary-navigation" class="{{ menuClass }}" aria-label="Main navigation">
+      <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="5"><a class="nav-link" href="{{ t.href }}" onClick="{{ closeMenu }}" aria-current="{{ t.current }}">{{ t.label }}</a></sc-for>
+    </nav>
+  </header>
+  <div class="hero-copy">
+    <p>{{ kicker }}</p>
+    <h1 id="page-heading" tabindex="-1">{{ title }}</h1>
+  </div>
+</div>
 
-<div style="position:relative;height:380px;overflow:hidden;background:radial-gradient(ellipse 55% 95% at 74% 55%,#0d1b35 0,#060c18 72%)">
-<div style="position:absolute;inset:0;opacity:.6;background-image:radial-gradient(1px 1px at 6% 18%,#fff 50%,transparent),radial-gradient(1px 1px at 19% 64%,#fff 50%,transparent),radial-gradient(1.5px 1.5px at 33% 12%,#fff 50%,transparent),radial-gradient(1px 1px at 48% 80%,#fff 50%,transparent),radial-gradient(1px 1px at 58% 22%,#fff 50%,transparent),radial-gradient(1.5px 1.5px at 91% 30%,#fff 50%,transparent),radial-gradient(1px 1px at 96% 78%,#fff 50%,transparent),radial-gradient(1px 1px at 86% 10%,#fff 50%,transparent)"></div>
-<div style="position:absolute;left:0;top:calc(55% - 170px);width:74%;height:340px;transform-origin:100% 50%;transform:rotate(-14deg);clip-path:polygon(0 0,100% 48%,100% 52%,0 100%);background:linear-gradient(90deg,transparent 0%,oklch(0.86 0.094 158 / .55) 30%,oklch(0.82 0.083 175 / .85) 75%,oklch(0.9 0.066 170) 100%);filter:blur(10px)"></div>
-<div style="position:absolute;left:0;top:calc(55% - 120px);width:74%;height:240px;transform-origin:100% 50%;transform:rotate(4deg);clip-path:polygon(0 0,100% 48%,100% 52%,0 100%);background:linear-gradient(90deg,transparent 5%,oklch(0.7 0.072 215 / .5) 35%,oklch(0.75 0.077 200 / .8) 80%,oklch(0.88 0.055 190) 100%);filter:blur(12px)"></div>
-<div style="position:absolute;left:0;top:calc(55% - 150px);width:74%;height:300px;transform-origin:100% 50%;transform:rotate(20deg);clip-path:polygon(0 0,100% 48%,100% 52%,0 100%);background:linear-gradient(90deg,transparent 10%,oklch(0.6 0.099 310 / .45) 40%,oklch(0.66 0.110 345 / .75) 80%,oklch(0.82 0.072 330) 100%);filter:blur(12px)"></div>
-<div style="position:absolute;left:0;top:calc(55% - 170px);width:74%;height:340px;transform-origin:100% 50%;transform:rotate(-14deg);clip-path:polygon(0 0,100% 48%,100% 52%,0 100%);background:repeating-linear-gradient(180deg,transparent 0 9px,rgba(230,255,245,.22) 9px 10px);opacity:.3"></div>
-<div style="position:absolute;left:0;top:calc(55% - 150px);width:74%;height:300px;transform-origin:100% 50%;transform:rotate(20deg);clip-path:polygon(0 0,100% 48%,100% 52%,0 100%);background:repeating-linear-gradient(180deg,transparent 0 11px,rgba(255,230,250,.18) 11px 12px);opacity:.25"></div>
-<div style="position:absolute;left:calc(74% - 260px);top:calc(55% - 260px);width:520px;height:520px;border-radius:50%;background:conic-gradient(from 200deg,oklch(0.86 0.094 158),oklch(0.75 0.077 200),oklch(0.6 0.099 300),oklch(0.68 0.110 345),oklch(0.86 0.094 158));mask-image:radial-gradient(circle,transparent 22%,#000 30%,transparent 68%);-webkit-mask-image:radial-gradient(circle,transparent 22%,#000 30%,transparent 68%);filter:blur(26px);opacity:.3"></div>
-<div style="position:absolute;left:calc(74% - 224px);top:calc(55% - 118px);width:448px;height:236px;clip-path:polygon(0% 50.0%,5% 42.2%,10% 34.5%,15% 27.3%,20% 20.6%,25% 14.6%,30% 9.5%,35% 5.4%,40% 2.4%,45% 0.6%,50% 0.0%,55% 0.6%,60% 2.4%,65% 5.4%,70% 9.5%,75% 14.6%,80% 20.6%,85% 27.3%,90% 34.5%,95% 42.2%,100% 50.0%,100% 50.0%,95% 57.8%,90% 65.5%,85% 72.7%,80% 79.4%,75% 85.4%,70% 90.5%,65% 94.6%,60% 97.6%,55% 99.4%,50% 100.0%,45% 99.4%,40% 97.6%,35% 94.6%,30% 90.5%,25% 85.4%,20% 79.4%,15% 72.7%,10% 65.5%,5% 57.8%,0% 50.0%);background:rgba(232,236,240,.3)"></div>
-<div style="position:absolute;left:calc(74% - 222px);top:calc(55% - 116px);width:444px;height:232px;clip-path:polygon(0% 50.0%,5% 42.2%,10% 34.5%,15% 27.3%,20% 20.6%,25% 14.6%,30% 9.5%,35% 5.4%,40% 2.4%,45% 0.6%,50% 0.0%,55% 0.6%,60% 2.4%,65% 5.4%,70% 9.5%,75% 14.6%,80% 20.6%,85% 27.3%,90% 34.5%,95% 42.2%,100% 50.0%,100% 50.0%,95% 57.8%,90% 65.5%,85% 72.7%,80% 79.4%,75% 85.4%,70% 90.5%,65% 94.6%,60% 97.6%,55% 99.4%,50% 100.0%,45% 99.4%,40% 97.6%,35% 94.6%,30% 90.5%,25% 85.4%,20% 79.4%,15% 72.7%,10% 65.5%,5% 57.8%,0% 50.0%);background:rgba(8,16,32,.62);overflow:hidden">
-<div style="position:absolute;left:50%;top:50%;width:220px;height:220px;margin:-110px 0 0 -110px;border-radius:50%;background:radial-gradient(circle,#010307 0 26%,transparent 27.5%),radial-gradient(circle,rgba(255,255,255,.45) 0 30%,transparent 46%),repeating-conic-gradient(rgba(2,6,14,.28) 0 1deg,transparent 1deg 3.5deg),conic-gradient(from 160deg,oklch(0.86 0.094 158),oklch(0.75 0.077 200),oklch(0.6 0.099 300),oklch(0.7 0.110 345),oklch(0.86 0.094 158));box-shadow:inset 0 0 0 9px rgba(2,6,14,.8),0 0 30px 4px oklch(0.8 0.094 170 / .18)"></div>
-<div style="position:absolute;left:calc(50% - 34px);top:calc(50% - 38px);width:24px;height:15px;border-radius:50%;background:rgba(255,255,255,.9);filter:blur(2px)"></div>
-</div>
-<header style="position:absolute;left:0;right:0;top:0;display:flex;justify-content:space-between;align-items:center;padding:22px 48px">
-<span style="font-family:'Instrument Sans',sans-serif;font-weight:600;font-size:20px;letter-spacing:.14em">NVSN</span>
-<nav style="display:flex;gap:6px;align-items:center">
-<sc-for list="{{ tabs }}" as="t" hint-placeholder-count="3"><button onClick="{{ t.onClick }}" style="border:0;cursor:pointer;padding:7px 14px;border-radius:6px;font-size:15px;font-weight:500;background:{{ t.bg }};color:{{ t.fg }}">{{ t.label }}</button></sc-for>
-</nav>
-</header>
-<div style="position:absolute;left:48px;bottom:40px;max-width:560px;display:flex;flex-direction:column;gap:10px">
-<span style="font-size:14px;color:#a9b6c3">{{ kicker }}</span>
-<h1 style="margin:0;font-family:'Gloock',serif;font-weight:400;font-size:64px;line-height:1;text-shadow:0 2px 30px rgba(6,12,24,.7)">{{ title }}</h1>
-</div>
-</div>
+<main id="main-content" tabindex="-1">
+<sc-if value="{{ showAboutNav }}">
+  <nav class="subnav" aria-label="About the network"><a href="#/about" aria-current="{{ aboutCurrent }}">Our story</a><a href="#/steering" aria-current="{{ steeringCurrent }}">Steering group</a></nav>
+</sc-if>
 
 <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
-<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid rgba(232,236,240,.1)">
-<sc-for list="{{ mission }}" as="m" hint-placeholder-count="3"><div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:18px;align-items:start;padding:32px 32px 32px {{ m.padL }};border-right:{{ m.br }}"><img src="{{ m.icon }}" alt="" style="width:64px;height:64px"><div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:'Gloock',serif;font-size:24px;line-height:1.15">{{ m.title }}</span><p style="margin:0;color:#b9c4ce">{{ m.body }}</p></div></div></sc-for>
-</div>
-<div style="display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);border-bottom:1px solid rgba(232,236,240,.1)">
-<div style="padding:32px 48px;display:flex;flex-direction:column;gap:10px;border-right:1px solid rgba(232,236,240,.1)">
-<span style="font-size:13px;font-weight:600;color:oklch(0.86 0.083 160)">Welcome</span>
-<p style="margin:0;font-size:20px;line-height:1.45">The goal of the Nordic Vision Science Network is to strengthen Vision Science across the Nordic region.</p>
-<a href="#" style="font-size:15px">Learn more</a>
-</div>
-<button onClick="{{ goMeetings }}" style="border:0;background:linear-gradient(160deg,rgba(120,230,190,.08),transparent 60%);color:inherit;cursor:pointer;text-align:left;padding:32px;display:flex;flex-direction:column;gap:6px">
-<span style="font-size:13px;font-weight:600;color:oklch(0.86 0.083 160)">Next meeting</span>
-<span style="font-family:'Gloock',serif;font-size:30px;line-height:1.1">Aalborg, 7–9 Dec 2026</span>
-<span style="font-size:14px;color:#a9b6c3">Aalborg University · Rendsburggade 14</span>
-<sc-if value="{{ showCountdown }}" hint-placeholder-val="{{ true }}"><span style="font-size:14px;margin-top:6px">{{ daysLeft }} days to go →</span></sc-if>
-</button>
-</div>
-<div style="padding:40px 48px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:40px;align-items:start;border-bottom:1px solid rgba(232,236,240,.1)">
-<div style="position:relative;aspect-ratio:16/11;border-radius:10px;background:radial-gradient(ellipse at 50% 0%,#0f1d33,#070d19 70%);border:1px solid rgba(232,236,240,.08);overflow:hidden">
-<iframe data-nvsn-map="1" src="nvsn-map.html" title="Map of member groups" style="position:absolute;inset:0;width:100%;height:100%;border:0;background:transparent"></iframe>
-</div>
-<div style="display:flex;flex-direction:column;gap:14px">
-<div style="display:flex;justify-content:space-between;align-items:baseline"><h2 style="margin:0;font-family:'Gloock',serif;font-weight:400;font-size:32px">The network</h2><button onClick="{{ goMembers }}" style="border:0;background:none;padding:0;cursor:pointer;color:oklch(0.86 0.083 160);font-size:15px">All members →</button></div>
-<span style="font-size:14px;color:#a9b6c3">{{ labCount }} research groups in {{ countryCount }} countries, 55°–64° N</span>
-<div style="display:flex;flex-direction:column">
-<sc-for list="{{ byCountry }}" as="c" hint-placeholder-count="6"><button onClick="{{ c.onClick }}" style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;padding:9px 0;border:0;border-top:1px solid rgba(232,236,240,.08);background:none;color:inherit;cursor:pointer;text-align:left;font-size:15px;opacity:{{ c.op }}"><span>{{ c.country }} <span style="color:#7f90a1">· {{ c.cities }}</span></span><span style="color:oklch(0.86 0.083 160)">{{ c.count }}</span></button></sc-for>
-</div>
-</div>
-</div>
-<div style="padding:32px 48px 40px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;border-bottom:1px solid rgba(232,236,240,.1)">
-<sc-for list="{{ photos }}" as="ph" hint-placeholder-count="4"><div style="display:flex;flex-direction:column;gap:8px"><div style="height:170px;border-radius:8px;background:repeating-linear-gradient(135deg,#0f1a2c 0 1px,#0a1322 1px 9px)"></div><span style="font-size:13px;color:#a9b6c3">{{ ph.caption }}</span></div></sc-for>
-</div>
-<div style="padding:32px 48px 40px;display:flex;flex-direction:column;gap:20px">
-<span style="font-size:13px;font-weight:600;color:oklch(0.86 0.083 160)">Timeline</span>
-<div style="position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px;padding-top:20px">
-<div style="position:absolute;left:0;right:0;top:4px;height:1px;background:linear-gradient(90deg,rgba(232,236,240,.15),oklch(0.86 0.083 160))"></div>
-<sc-for list="{{ timeline }}" as="e" hint-placeholder-count="5"><div style="position:relative;display:flex;flex-direction:column;gap:2px"><span style="position:absolute;left:0;top:-20px;width:8px;height:8px;border-radius:50%;background:{{ e.dot }}"></span><span style="font-size:13px;color:#a9b6c3">{{ e.date }}</span><span style="font-size:15px;line-height:1.4">{{ e.text }}</span></div></sc-for>
-</div>
-</div>
+  <section class="mission-grid" aria-label="Our mission">
+    <sc-for list="{{ mission }}" as="m" hint-placeholder-count="3"><div class="mission-item"><img sc-camel-src="{{ m.icon }}" alt=""><div><h2>{{ m.title }}</h2><p>{{ m.body }}</p></div></div></sc-for>
+  </section>
+  <section class="welcome-grid" aria-label="Welcome to the network">
+    <div class="welcome-copy"><span class="eyebrow">Welcome</span><p>The goal of the Nordic Vision Science Network is to strengthen Vision Science across the Nordic region.</p><a href="#/about" class="text-link">Learn more →</a></div>
+    <a class="next-meeting" href="#/meeting-2026"><span class="eyebrow">Next meeting</span><h2>Aalborg, 7–9 Dec 2026</h2><span class="muted">Aalborg University · Rendsburggade 14</span><sc-if value="{{ showCountdown }}"><span>{{ daysLeft }} days to go →</span></sc-if></a>
+  </section>
+  <section class="section network-grid" aria-label="Explore the network">
+    <div><div class="map-frame"><iframe data-nvsn-map="1" src="nvsn-map.html" title="Interactive map of member groups"></iframe></div><p class="map-help">Select a city to explore its labs.</p></div>
+    <div><div class="section-heading"><h2>The network</h2><a href="#/members" class="text-link">All members →</a></div><p class="muted">{{ labCount }} research groups in {{ countryCount }} countries, 55°–64° N</p><div class="country-list"><sc-for list="{{ byCountry }}" as="c" hint-placeholder-count="6"><button class="country-row" onClick="{{ c.onClick }}"><span>{{ c.country }} <span class="country-cities">· {{ c.cities }}</span></span><span>{{ c.count }}</span></button></sc-for></div></div>
+  </section>
+  <section class="section" aria-label="From around the network"><div class="story-grid"><sc-for list="{{ photos }}" as="ph" hint-placeholder-count="4"><a class="story-tile" href="{{ ph.href }}"><img sc-camel-src="{{ ph.image }}" alt="" loading="lazy"><span>{{ ph.caption }}</span></a></sc-for></div></section>
+  <section class="section" aria-label="Network timeline"><span class="eyebrow">Timeline</span><div class="timeline"><sc-for list="{{ timeline }}" as="event" hint-placeholder-count="5"><a class="timeline-item" href="{{ event.href }}"><small>{{ event.date }}</small><span>{{ event.text }}</span></a></sc-for></div></section>
 </sc-if>
 
-<sc-if value="{{ isMembers }}" hint-placeholder-val="{{ false }}">
-<div style="padding:28px 48px;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;border-bottom:1px solid rgba(232,236,240,.1)">
-<p style="margin:0;max-width:620px;color:#b9c4ce">Established research laboratories and research groups in vision science can join the network. For membership please contact the network steering group.</p>
-<div style="display:flex;flex-wrap:wrap;gap:6px"><sc-for list="{{ chips }}" as="c" hint-placeholder-count="7"><button onClick="{{ c.onClick }}" style="cursor:pointer;padding:6px 12px;font-size:13px;border-radius:999px;border:1px solid {{ c.border }};background:{{ c.bg }};color:{{ c.fg }}">{{ c.label }}</button></sc-for></div>
-</div>
-<div style="padding:32px 48px 40px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:40px;align-items:start;border-bottom:1px solid rgba(232,236,240,.1)">
-<div style="position:sticky;top:16px;aspect-ratio:4/5;border-radius:10px;background:radial-gradient(ellipse at 50% 0%,#0f1d33,#070d19 70%);border:1px solid rgba(232,236,240,.08);overflow:hidden">
-<iframe data-nvsn-map="1" src="nvsn-map.html" title="Map of member groups" style="position:absolute;inset:0;width:100%;height:100%;border:0;background:transparent"></iframe>
-</div>
-<div style="display:flex;flex-direction:column;gap:24px">
-<sc-for list="{{ groups }}" as="g" hint-placeholder-count="3">
-<div style="display:flex;flex-direction:column">
-<div style="display:flex;justify-content:space-between;align-items:baseline;padding-bottom:6px"><span style="font-family:'Gloock',serif;font-size:24px">{{ g.label }}</span><span style="font-size:13px;color:oklch(0.86 0.083 160)">{{ g.latRange }}</span></div>
-<sc-for list="{{ g.labs }}" as="lab" hint-placeholder-count="3"><div style="display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:16px;padding:10px 0;border-top:1px solid rgba(232,236,240,.08)"><div style="display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;align-items:center"><div style="width:44px;height:44px;border-radius:8px;background:#e8ecf0;display:grid;place-items:center;overflow:hidden;font-size:13px;font-weight:600;color:#0b1527;letter-spacing:.02em"><sc-if value="{{ lab.logo }}" hint-placeholder-val="{{ false }}"><img src="{{ lab.logo }}" alt="{{ lab.name }} logo" style="width:100%;height:100%;object-fit:contain;padding:4px;box-sizing:border-box"></sc-if><sc-if value="{{ lab.noLogo }}" hint-placeholder-val="{{ true }}"><span>{{ lab.initials }}</span></sc-if></div><div style="display:flex;flex-direction:column"><a href="#" style="font-size:16px;font-weight:500;text-decoration:none">{{ lab.name }}</a><span style="font-size:14px;color:#8d9cab">{{ lab.uni }}, {{ lab.city }}</span></div></div><span style="font-size:14px;color:#b9c4ce;text-align:right">{{ lab.contact }}</span></div></sc-for>
-</div>
-</sc-for>
-<div style="display:flex;flex-direction:column"><span style="font-family:'Gloock',serif;font-size:24px;padding-bottom:6px">Young network scientists</span><div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:16px;padding:10px 0;border-top:1px solid rgba(232,236,240,.08)"><a href="#" style="font-size:16px;font-weight:500;text-decoration:none">Esra Öncel</a><span style="font-size:14px;color:#b9c4ce;text-align:right">Department of Clinical Neuroscience at the Karolinska Institutet (Sweden)</span></div></div>
-</div>
-</div>
-<div style="padding:32px 48px 40px;display:flex;flex-direction:column;gap:18px">
-<h2 style="margin:0;font-family:'Gloock',serif;font-weight:400;font-size:32px">Steering group</h2>
-<div style="display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px">
-<sc-for list="{{ steering }}" as="s" hint-placeholder-count="6"><div style="display:flex;flex-direction:column;gap:8px"><div style="aspect-ratio:1;border-radius:50%;background:repeating-linear-gradient(135deg,#16233a 0 1px,#0d1729 1px 6px);box-shadow:0 0 0 2px #060c18,0 0 0 3px oklch(0.75 0.072 175 / .6)"></div><span style="font-size:12px;font-weight:600;color:oklch(0.86 0.083 160)">{{ s.role }}</span><a href="#" style="font-size:15px;font-weight:500;line-height:1.25;text-decoration:none">{{ s.name }}</a><span style="font-size:13px;color:#8d9cab;line-height:1.3">{{ s.uni }}</span></div></sc-for>
-</div>
-</div>
+<sc-if value="{{ isArticle }}">
+  <sc-for list="{{ articleSections }}" as="section" hint-placeholder-count="3">
+    <section class="story-section {{ section.layout }} {{ articleClass }}">
+      <div><h2>{{ section.title }}</h2><sc-for list="{{ section.paragraphs }}" as="paragraph"><p><sc-for list="{{ paragraph.tokens }}" as="token"><sc-if value="{{ token.linked }}"><a href="{{ token.href }}">{{ token.text }}</a></sc-if><sc-if value="{{ token.plain }}">{{ token.text }}</sc-if></sc-for></p></sc-for></div>
+      <sc-if value="{{ section.hasImage }}"><img sc-camel-src="{{ section.image }}" alt="" loading="lazy"></sc-if>
+    </section>
+  </sc-for>
+  <nav class="article-actions" aria-label="Explore the network"><a href="#/members" class="text-link">Meet the members →</a><a href="#/steering" class="text-link">Contact the steering group →</a><a href="#/meetings" class="text-link">Network meetings →</a></nav>
 </sc-if>
 
-<sc-if value="{{ isMeetings }}" hint-placeholder-val="{{ false }}">
-<div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);border-bottom:1px solid rgba(232,236,240,.1)">
-<div style="padding:28px 32px 28px 48px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(232,236,240,.1)"><span style="font-size:13px;font-weight:600;color:oklch(0.86 0.083 160)">Dates</span><span style="font-size:16px">December 7. to 9. – 2026</span></div>
-<div style="padding:28px 32px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(232,236,240,.1)"><span style="font-size:13px;font-weight:600;color:oklch(0.86 0.083 160)">Venue</span><span style="font-size:16px;line-height:1.45">Aalborg University, Room TBA<br>Rendsburggade 14, 9000 Aalborg, Denmark</span></div>
-<div style="padding:28px 32px;display:flex;flex-direction:column;gap:4px;border-right:1px solid rgba(232,236,240,.1)"><span style="font-size:13px;font-weight:600;color:oklch(0.86 0.083 160)">Local organising committee</span><span style="font-size:16px">Thomas Alrik Sørensen</span></div>
-<div style="padding:28px 48px 28px 32px;display:flex;flex-direction:column;gap:4px"><span style="font-size:13px;font-weight:600;color:oklch(0.86 0.083 160)">Countdown</span><sc-if value="{{ showCountdown }}" hint-placeholder-val="{{ true }}"><span style="font-family:'Gloock',serif;font-size:30px;line-height:1">{{ daysLeft }} days</span></sc-if></div>
-</div>
-<div style="padding:32px 48px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.3fr);gap:16px;border-bottom:1px solid rgba(232,236,240,.1)">
-<sc-for list="{{ days2026 }}" as="d" hint-placeholder-count="3"><a href="#" style="border:1px solid rgba(232,236,240,.1);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:4px;text-decoration:none;background:linear-gradient(160deg,rgba(120,230,190,.06),transparent 60%)"><span style="font-size:13px;color:#a9b6c3">{{ d.date }}</span><span style="font-family:'Gloock',serif;font-size:28px">{{ d.day }}</span><span style="font-size:13px;color:#8d9cab">Programme TBA</span></a></sc-for>
-<div style="border-radius:10px;background:repeating-linear-gradient(135deg,#0f1a2c 0 1px,#0a1322 1px 9px);min-height:150px;display:flex;align-items:flex-end;padding:12px;font-size:12px;color:#7f93a7">photo — Aalborg University</div>
-</div>
-<div style="padding:24px 48px;display:flex;gap:32px;font-size:15px;color:#b9c4ce;border-bottom:1px solid rgba(232,236,240,.1)"><span>Abstract book (TBA)</span><span>Meeting programme (TBA)</span></div>
-<div style="padding:32px 48px 40px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:40px;align-items:center">
-<div style="height:200px;border-radius:10px;background:repeating-linear-gradient(135deg,#0f1a2c 0 1px,#0a1322 1px 9px);display:flex;align-items:flex-end;padding:12px;font-size:12px;color:#7f93a7">photo — Bergen 2025</div>
-<div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:13px;font-weight:600;color:oklch(0.86 0.083 160)">NVSN meeting 2025</span><span style="font-family:'Gloock',serif;font-size:32px;line-height:1.1">Bergen, 3–6 June 2025</span><p style="margin:0;color:#b9c4ce">The first official meeting in the NVSN was held in Bergen June 3. to 6. 2025 organised by Andrey Chetverikov, Vebjørn Ekroll, Melika Miralem, and Subhankar Karmakar.</p><span style="font-size:15px">Programme: <a href="#">Tuesday</a> · <a href="#">Wednesday</a> · <a href="#">Thursday</a> · <a href="#">Friday</a></span></div>
-</div>
+<sc-if value="{{ isSteering }}">
+  <section class="section"><div class="section-heading"><h2>Steering group members</h2></div><div class="steering-grid"><sc-for list="{{ steering }}" as="person" hint-placeholder-count="6"><article class="steering-person"><a href="{{ person.href }}" tabindex="-1" aria-hidden="true"><img sc-camel-src="{{ person.image }}" alt="" loading="lazy"></a><span class="eyebrow">{{ person.role }}</span><h2><a href="{{ person.href }}">{{ person.name }}</a></h2><p>{{ person.uni }}</p></article></sc-for></div></section>
+  <div class="article-actions"><a href="#/members" class="text-link">Explore the member groups →</a></div>
 </sc-if>
 
-<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}"><div style="padding:12px 48px;border-top:1px solid rgba(232,236,240,.1);display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;font-size:14px;color:#b9c4ce"><span style="font-size:13px;font-weight:600;color:oklch(0.86 0.083 160)">Mailing list</span><span>Email <strong style="font-weight:600;color:#e8ecf0">sympa@list.uib.no</strong> with the subject line</span><span style="padding:3px 8px;background:rgba(232,236,240,.06);border-radius:4px;color:#e8ecf0">subscribe nvsn FirstName LastName</span></div></sc-if>
-<footer style="padding:24px 48px;border-top:1px solid rgba(232,236,240,.1);display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:13px;color:#7f90a1">
-<span>Nordic Vision Science Network · <a href="#">About</a> · <a href="#">Steering group</a> · <a href="#">Exchange</a></span>
-<span>This page is maintained by Thomas Alrik Sørensen</span>
-</footer>
+<sc-if value="{{ isMembers }}">
+  <section class="section membership-intro"><p>Established research laboratories and research groups in vision science can join the network. For membership please <a href="#/steering">contact the network steering group</a>.</p><div class="filter-list" aria-label="Filter member groups by country"><sc-for list="{{ chips }}" as="chip" hint-placeholder-count="7"><button class="filter-chip" aria-pressed="{{ chip.pressed }}" onClick="{{ chip.onClick }}">{{ chip.label }}</button></sc-for></div></section>
+  <section class="section members-layout" aria-label="Network research groups">
+    <div class="members-map"><div class="map-frame"><iframe data-nvsn-map="1" src="nvsn-map.html" title="Interactive map of member groups"></iframe></div><p class="map-help">Select a point to open a member's details. Numbered points have more than one lab.</p></div>
+    <sc-if value="{{ hasSelectedMember }}"><section id="lab-details" class="member-detail" tabindex="-1" aria-labelledby="member-detail-title"><a class="text-link" href="#/members">← Back to all member groups</a><img class="member-detail-image" sc-camel-src="{{ selectedMember.logo }}" alt=""><span class="eyebrow">{{ selectedMember.kindLabel }} · {{ selectedMember.city }}, {{ selectedMember.country }}</span><h2 id="member-detail-title">{{ selectedMember.name }}</h2><p class="member-detail-university">{{ selectedMember.uni }}</p><p>{{ selectedMember.description }}</p><div class="member-detail-contact"><span class="eyebrow">Contact</span><a href="{{ selectedMember.contactHref }}">{{ selectedMember.contact }}</a></div><a class="member-website" href="{{ selectedMember.href }}">Visit {{ selectedMember.name }} ↗</a></section></sc-if>
+    <sc-if value="{{ showDirectory }}"><div id="member-directory" class="member-groups" tabindex="-1">
+      <sc-if value="{{ hasNoGroups }}"><p class="empty-state">No research groups in this selection. Choose another location or select All.</p></sc-if>
+      <sc-for list="{{ groups }}" as="group" hint-placeholder-count="6"><section><div class="group-heading"><h2>{{ group.label }}</h2><small>{{ group.latRange }}</small></div><sc-for list="{{ group.labs }}" as="lab" hint-placeholder-count="2"><article class="lab" data-member-id="{{ lab.id }}"><a class="lab-logo" href="{{ lab.profileHref }}" tabindex="-1" aria-hidden="true"><img sc-camel-src="{{ lab.logo }}" alt="" loading="lazy"></a><div><h3><a href="{{ lab.profileHref }}">{{ lab.name }}</a></h3><p>{{ lab.uni }} · {{ lab.city }}</p><sc-if value="{{ lab.showDescription }}"><p>{{ lab.description }}</p></sc-if><p class="contact">Contact: <a href="{{ lab.contactHref }}">{{ lab.contact }}</a></p><a class="text-link lab-details-link" href="{{ lab.profileHref }}">Lab details →</a></div></article></sc-for></section></sc-for>
+      <sc-if value="{{ showYoung }}"><section><div class="group-heading"><h2>Young network scientists</h2></div><sc-for list="{{ youngScientists }}" as="scientist"><article class="young-scientist"><a href="{{ scientist.profileHref }}">{{ scientist.name }}</a><p>{{ scientist.description }}</p></article></sc-for></section></sc-if>
+    </div></sc-if>
+  </section>
+  <div class="article-actions"><a href="#/steering" class="text-link">Steering group & membership enquiries →</a></div>
+</sc-if>
+
+<sc-if value="{{ isMeetings }}">
+  <section class="section"><div class="section-heading"><h2>Network meetings</h2></div><div class="meeting-list"><sc-for list="{{ meetings }}" as="meeting" hint-placeholder-count="2"><a class="meeting-card" href="{{ meeting.href }}"><img sc-camel-src="{{ meeting.image }}" alt="" loading="lazy"><span class="eyebrow">{{ meeting.edition }}</span><h3>{{ meeting.city }}, {{ meeting.dates }}</h3><p>Hosted by {{ meeting.venue }}</p><p>Local organisers: {{ meeting.organisers }}</p><span class="muted">{{ meeting.registration }}</span><span class="text-link">Meeting details & programme →</span></a></sc-for></div></section>
+  <section class="section"><div class="section-heading"><h2>Conferences & symposia</h2></div><p class="muted">Conferences with an emphasis on vision research, and related meetings that include vision science.</p><div style="margin-top:24px"><sc-for list="{{ conferences }}" as="conference" hint-placeholder-count="6"><article class="conference-row"><h3><a href="{{ conference.href }}">{{ conference.title }} ↗</a></h3><p>{{ conference.body }}</p></article></sc-for></div></section>
+</sc-if>
+
+<sc-if value="{{ isMeeting }}">
+  <section class="section">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#/meetings">Meetings</a><span aria-hidden="true">/</span><span>{{ meeting.city }} {{ meeting.year }}</span></nav>
+    <div class="meeting-feature">
+      <figure><img sc-camel-src="{{ meeting.image }}" alt="" loading="lazy"><figcaption>{{ meeting.city }} · NVSN meeting {{ meeting.year }}</figcaption></figure>
+      <div class="meeting-facts"><div><span class="eyebrow">Dates</span><h2>{{ meeting.dates }}</h2></div><div><span class="eyebrow">Venue</span><p>{{ meeting.venue }}<br>{{ meeting.room }}<br>{{ meeting.address }}</p></div><div><span class="eyebrow">Local organising committee</span><p>{{ meeting.organisers }}</p></div><sc-if value="{{ meeting.pending }}"><div><span class="eyebrow">Registration</span><p>Sign-up and deadline to be announced.</p></div></sc-if><sc-if value="{{ showMeetingCountdown }}"><p>{{ daysLeft }} days to go</p></sc-if></div>
+    </div>
+    <div class="document-links"><sc-for list="{{ meeting.documents }}" as="document"><a class="text-link" href="{{ document.href }}">{{ document.label }} ↗</a></sc-for><sc-if value="{{ meeting.pending }}"><span class="muted">Abstract book (TBA) · Meeting programme (TBA)</span></sc-if></div>
+  </section>
+  <section class="section"><div class="section-heading"><h2>Daily programme</h2></div><sc-if value="{{ meeting.pending }}"><p class="notice">The programme is being prepared. Rooms, session chairs and further details are to be announced.</p></sc-if><div class="day-list"><sc-for list="{{ meeting.days }}" as="day" hint-placeholder-count="4"><a class="day-card" href="{{ day.href }}"><small>{{ day.date }}</small><strong>{{ day.label }}</strong><span class="text-link">View programme →</span></a></sc-for></div></section>
+  <div class="article-actions"><a href="#/meeting-2026" class="text-link">Aalborg 2026 →</a><a href="#/meeting-2025" class="text-link">Bergen 2025 →</a><a href="#/meetings" class="text-link">All meetings & conferences →</a></div>
+</sc-if>
+
+<sc-if value="{{ isProgramme }}">
+  <section class="section">
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="#/meetings">Meetings</a><span aria-hidden="true">/</span><a href="{{ programme.meetingHref }}">{{ programme.meetingLabel }}</a><span aria-hidden="true">/</span><span>{{ title }}</span></nav>
+    <nav class="day-list" aria-label="Daily programmes"><sc-for list="{{ programmeDays }}" as="day" hint-placeholder-count="4"><a class="day-card" href="{{ day.href }}" aria-current="{{ day.current }}"><small>{{ day.date }}</small><strong>{{ day.label }}</strong></a></sc-for></nav>
+  </section>
+  <section class="section" aria-label="Sessions"><sc-if value="{{ programme.pending }}"><p class="notice">Programme details are to be announced. Session times, speakers, rooms and chairs have not yet been published.</p></sc-if><div class="programme-list"><sc-for list="{{ programme.sessions }}" as="session" hint-placeholder-count="3"><article class="programme-session"><h2>{{ session.title }}</h2><div class="session-meta"><span>{{ session.room }}</span><span>{{ session.chair }}</span></div><sc-for list="{{ session.events }}" as="event" hint-placeholder-count="3"><div class="programme-event"><time>{{ event.time }}</time><p>{{ event.title }}</p></div></sc-for></article></sc-for></div></section>
+</sc-if>
+
+<sc-if value="{{ notFound }}"><section class="section"><p>This page could not be found.</p><a class="text-link" href="#/home">Return to the homepage →</a></section></sc-if>
+</main>
+
+<section class="mailing-list" aria-label="Mailing list"><span class="eyebrow">Mailing list</span><span>Email <a href="mailto:sympa@list.uib.no?subject=subscribe%20nvsn%20FirstName%20LastName">sympa@list.uib.no</a> with the subject line</span><code>subscribe nvsn FirstName LastName</code></section>
+<footer class="site-footer"><div class="footer-links"><span>Nordic Vision Science Network</span><a href="#/about">About</a><a href="#/steering">Steering group</a><a href="#/exchange">Exchange</a></div><span>This page is maintained by <a href="https://vbn.aau.dk/en/persons/alrik">Thomas Alrik Sørensen</a></span></footer>
+<sc-if value="{{ hasSource }}"><div class="source-link"><a href="{{ source }}">Original NVSN page ↗</a></div></sc-if>
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;startTab&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Home&quot;,&quot;Members&quot;,&quot;Meetings&quot;],&quot;default&quot;:&quot;Home&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;showCountdown&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;memberGrouping&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;By country&quot;,&quot;A–Z&quot;],&quot;default&quot;:&quot;By country&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;startTab&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Home&quot;,&quot;Members&quot;,&quot;Meetings&quot;,&quot;About&quot;,&quot;Steering group&quot;,&quot;Exchange&quot;],&quot;default&quot;:&quot;Home&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;showCountdown&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;memberGrouping&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;By country&quot;,&quot;A–Z&quot;],&quot;default&quot;:&quot;By country&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
 class Component extends DCLogic {
-  state = { tab: null, filter: 'All' };
-  labs = [
-    { name: 'Andersen Lab', uni: 'University of Southern Denmark', city: 'Odense', country: 'Denmark', contact: 'Professor Søren Krogh Andersen' },
-    { name: 'Barratt Lab', uni: 'Copenhagen Business School', city: 'Copenhagen', country: 'Denmark', contact: 'Associate professor Daniel Barratt' },
-    { name: 'Center for Visual Cognition', uni: 'University of Copenhagen', city: 'Copenhagen', country: 'Denmark', contact: 'anders.petersen@psy.ku.dk' },
-    { name: 'Centre Cognitive Neuroscience', uni: 'Aalborg University', city: 'Aalborg', country: 'Denmark', contact: 'alrik@ikp.aau.dk' },
-    { name: 'Dreneva Lab', uni: 'Aarhus University', city: 'Aarhus', country: 'Denmark', contact: 'Assistant professor Anna Dreneva' },
-    { name: 'Chetverikov Lab', uni: 'University of Bergen', city: 'Bergen', country: 'Norway', contact: 'Associate professor Andrey Chetverikov' },
-    { name: 'Ekroll Lab', uni: 'University of Bergen', city: 'Bergen', country: 'Norway', contact: 'Professor Vebjørn Ekroll' },
-    { name: 'Laeng Lab', uni: 'University of Oslo', city: 'Oslo', country: 'Norway', contact: 'Professor Bruno Laeng' },
-    { name: 'Nikolaev Lab', uni: 'Lund University', city: 'Lund', country: 'Sweden', contact: 'Researcher Andrey Nikolaev' },
-    { name: 'Perception Action Cognition', uni: 'University of Helsinki', city: 'Helsinki', country: 'Finland', contact: 'vi-sci@helsinki.fi' },
-    { name: 'Icelandic Vision Lab', uni: 'University of Iceland, University of Akureyri, Reykjavik University', city: 'Reykjavik', country: 'Iceland', contact: 'visionlab@hi.is' },
-    { name: 'Laboratory for Perceptual and Cognitive Systems', uni: 'University of Latvia', city: 'Riga', country: 'Latvia', contact: 'Professor Jurģis Šķilters' }
-  ];
-  cities = {
-    Reykjavik: [5, 22, 'r', 64.15], Bergen: [53, 51, 'l', 60.39], Oslo: [63, 55, 'r', 59.91], Stockholm: [75, 59, 'r', 59.33],
-    Helsinki: [87.5, 52, 'l', 60.17], Riga: [86, 78, 'l', 56.95], Lund: [68.5, 85, 'r', 55.7], Copenhagen: [65.5, 88, 'l', 55.68],
-    Aalborg: [61, 75, 'l', 57.05], Aarhus: [62.5, 81, 'l', 56.16], Odense: [61.5, 94, 'l', 55.4]
-  };
+  state = { route: null, filter: 'All', menuOpen: false };
+  content = window.NVSN_CONTENT;
   countries = ['Denmark', 'Norway', 'Sweden', 'Finland', 'Iceland', 'Latvia'];
-  componentDidMount() {
-    this.onMsg = e => {
-      const d = e.data || {};
-      if (d.type === 'nvsn-map-filter') this.setFilter(d.city);
-      if (d.type === 'nvsn-map-ready') this.syncMaps();
-    };
-    window.addEventListener('message', this.onMsg);
+  latitudes = { Reykjavik: 64.15, Bergen: 60.39, Oslo: 59.91, Stockholm: 59.33, Helsinki: 60.17, Riga: 56.95, Lund: 55.7, Copenhagen: 55.68, Aalborg: 57.05, Aarhus: 56.16, Odense: 55.4 };
+  cityCountries = { Reykjavik: 'Iceland', Bergen: 'Norway', Oslo: 'Norway', Stockholm: 'Sweden', Helsinki: 'Finland', Riga: 'Latvia', Lund: 'Sweden', Copenhagen: 'Denmark', Aalborg: 'Denmark', Aarhus: 'Denmark', Odense: 'Denmark' };
+  routeFromLocation() {
+    if (window.location.hash.startsWith('#/')) return window.location.hash.slice(2);
+    return { Home: 'home', Members: 'members', Meetings: 'meetings', About: 'about', 'Steering group': 'steering', Exchange: 'exchange' }[this.props.startTab ?? 'Home'];
   }
-  componentWillUnmount() { window.removeEventListener('message', this.onMsg); }
-  componentDidUpdate() { this.syncMaps(); }
-  syncMaps() { document.querySelectorAll('iframe[data-nvsn-map]').forEach(f => f.contentWindow && f.contentWindow.postMessage({ type: 'nvsn-map-state', filter: this.state.filter }, '*')); }
-  setTab(t) { this.setState({ tab: t }); }
-  setFilter(f) { this.setState(s => ({ filter: s.filter === f ? 'All' : f })); }
+  currentRoute() { return this.state.route ?? this.routeFromLocation(); }
+  allMembers() { return [...this.content.labs, ...this.content.youngScientists]; }
+  memberForRoute(route) { return route.startsWith('members/') ? this.allMembers().find(member => member.id === route.slice(8)) : null; }
+  pageForRoute(route) { return this.memberForRoute(route) ? this.content.pages.members : this.content.pages[route]; }
+  componentDidMount() {
+    this.lastRoute = this.currentRoute();
+    this.updateTitle();
+    this.onHash = () => {
+      if (!window.location.hash || window.location.hash.startsWith('#/')) this.setState({ route: this.routeFromLocation(), menuOpen: false });
+    };
+    this.onKey = e => { if (e.key === 'Escape' && this.state.menuOpen) this.setState({ menuOpen: false }); };
+    this.onMsg = e => {
+      const frames = [...document.querySelectorAll('iframe[data-nvsn-map]')];
+      if (e.origin !== window.location.origin || !frames.some(f => f.contentWindow === e.source)) return;
+      const d = e.data;
+      if (d?.type === 'nvsn-map-open-member' && this.allMembers().some(member => member.id === d.id)) this.openMember(d.id);
+      if (d?.type === 'nvsn-map-ready') this.syncMaps();
+    };
+    window.addEventListener('hashchange', this.onHash);
+    window.addEventListener('keydown', this.onKey);
+    window.addEventListener('message', this.onMsg);
+    this.syncMaps();
+    if (this.memberForRoute(this.currentRoute())) this.focusMember();
+  }
+  componentWillUnmount() {
+    window.removeEventListener('hashchange', this.onHash);
+    window.removeEventListener('keydown', this.onKey);
+    window.removeEventListener('message', this.onMsg);
+  }
+  componentDidUpdate() {
+    const route = this.currentRoute();
+    if (route !== this.lastRoute) {
+      const previous = this.lastRoute;
+      this.lastRoute = route;
+      this.updateTitle();
+      if (this.memberForRoute(route)) this.focusMember();
+      else if (route === 'members' && previous.startsWith('members/')) this.focusPanel('member-directory');
+      else {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        document.getElementById('page-heading')?.focus({ preventScroll: true });
+      }
+    }
+    this.syncMaps();
+  }
+  updateTitle() {
+    const route = this.currentRoute(), member = this.memberForRoute(route), page = this.pageForRoute(route);
+    document.title = member ? member.name + ' · NVSN' : page ? (page.id === 'home' ? page.title : page.title + ' · NVSN') : 'Page not found · NVSN';
+  }
+  syncMaps() {
+    const targetOrigin = window.location.origin === 'null' ? '*' : window.location.origin;
+    const selectedId = this.memberForRoute(this.currentRoute())?.id ?? null;
+    document.querySelectorAll('iframe[data-nvsn-map]').forEach(f => f.contentWindow?.postMessage({ type: 'nvsn-map-state', filter: this.state.filter, selectedId }, targetOrigin));
+  }
+  focusPanel(id) { requestAnimationFrame(() => { const panel = document.getElementById(id); panel?.scrollIntoView({ block: 'start', behavior: 'instant' }); panel?.focus({ preventScroll: true }); }); }
+  focusMember() { this.focusPanel('lab-details'); }
+  openMember(id) {
+    this.setState({ filter: 'All' });
+    if (this.currentRoute() === 'members/' + id) this.focusMember();
+    else window.location.hash = '/members/' + id;
+  }
+  setFilter(filter) {
+    this.setState(s => ({ filter: s.filter === filter ? 'All' : filter }));
+    if (this.memberForRoute(this.currentRoute())) window.location.hash = '/members';
+  }
   renderVals() {
-    const tab = this.state.tab || (this.props.startTab ?? 'Home');
-    const f = this.state.filter;
-    const countryOf = city => (this.labs.find(l => l.city === city) || { country: 'Sweden' }).country;
-    const fc = f !== 'All' && this.cities[f] ? countryOf(f) : f;
-    const isOn = (city, country) => f === 'All' || f === city || f === country;
-    const lat = l => this.cities[l.city][3];
+    const route = this.currentRoute();
+    const member = this.memberForRoute(route);
+    const page = this.pageForRoute(route);
+    const type = page?.type;
+    const activeNav = route.startsWith('meeting') ? 'meetings' : route.startsWith('members/') ? 'members' : route === 'steering' ? 'about' : route;
+    const filter = this.state.filter;
+    const countryFilter = this.cityCountries[filter] ?? filter;
+    const filtered = this.content.labs.filter(l => filter === 'All' || filter === l.city || filter === l.country).map(l => ({ ...l, showDescription: l.name === 'Centre Cognitive Neuroscience' || l.name === 'Icelandic Vision Lab' }));
     const alpha = (this.props.memberGrouping ?? 'By country') === 'A–Z';
-    const filtered = this.labs.filter(l => isOn(l.city, l.country)).map(l => ({ ...l, noLogo: !l.logo, initials: l.name.replace(/ Lab$/, '').split(/\s+/).filter(w => /^[A-ZÆØÅ]/.test(w)).slice(0, 2).map(w => w[0]).join('') }));
-    const groups = alpha
-      ? [{ label: 'A–Z', latRange: '', labs: [...filtered].sort((a, b) => a.name.localeCompare(b.name)) }]
-      : this.countries.map(c => {
-          const labs = filtered.filter(l => l.country === c).sort((a, b) => lat(b) - lat(a));
-          const ls = labs.map(lat), hi = Math.max(...ls).toFixed(1), lo = Math.min(...ls).toFixed(1);
-          return { label: c, latRange: labs.length ? (hi === lo ? hi + '° N' : lo + '–' + hi + '° N') : '', labs };
-        }).filter(g => g.labs.length);
-    const pins = Object.entries(this.cities).map(([city, [px, py, side]]) => ({ city, left: px + '%', top: py + '%', dir: side === 'l' ? 'row-reverse' : 'row', tx: side === 'l' ? 'calc(-100% + 4px)' : '-4px', op: isOn(city, countryOf(city)) ? 1 : 0.28, onClick: () => this.setFilter(city) }));
-    const byCountry = this.countries.map(c => {
-      const ls = this.labs.filter(l => l.country === c);
-      return { country: c, count: ls.length, cities: [...new Set(ls.map(l => l.city))].join(', '), op: fc === 'All' || fc === c ? 1 : 0.4, onClick: () => this.setFilter(c) };
+    const groups = alpha ? [{ label: 'A–Z', latRange: '', labs: [...filtered].sort((a, b) => a.name.localeCompare(b.name)) }] : this.countries.map(country => {
+      const labs = filtered.filter(l => l.country === country).sort((a, b) => this.latitudes[b.city] - this.latitudes[a.city]);
+      const latitudes = labs.map(l => this.latitudes[l.city]);
+      const hi = Math.max(...latitudes).toFixed(1), lo = Math.min(...latitudes).toFixed(1);
+      return { label: country, latRange: labs.length ? (hi === lo ? hi + '° N' : lo + '–' + hi + '° N') : '', labs };
+    }).filter(g => g.labs.length);
+    const byCountry = this.countries.map(country => {
+      const labs = this.content.labs.filter(l => l.country === country);
+      return { country, count: labs.length, cities: [...new Set(labs.map(l => l.city))].join(', '), onClick: () => { this.setState({ filter: country }); window.location.hash = '/members'; } };
     });
-    const chips = ['All', ...this.countries].map(c => { const on = fc === c; return { label: c, bg: on ? '#e8ecf0' : 'transparent', fg: on ? '#060c18' : '#e8ecf0', border: on ? '#e8ecf0' : 'rgba(232,236,240,.25)', onClick: () => this.setFilter(c) }; });
-    const tabs = ['Home', 'Members', 'Meetings'].map(t => ({ label: t, bg: tab === t ? 'rgba(232,236,240,.14)' : 'transparent', fg: tab === t ? '#fff' : '#b9c4ce', onClick: () => this.setTab(t) }));
-    const head = { Home: ['Nordic Vision Science Network', 'Vision Science in the North'], Members: ['Members', 'Nordic Vision Science Network'], Meetings: ['Welcome to Aalborg', 'NVSN meeting 2026'] }[tab];
-    const G = 'oklch(0.88 0.083 160)';
+    const articleSections = ['about', 'exchange'].includes(type) ? page.sections.map(section => ({ ...section, layout: section.hasImage ? 'with-image' : 'text-only', paragraphs: section.paragraphs.map(p => ({ ...p, tokens: p.tokens.map(token => ({ ...token, plain: !token.linked })) })) })) : [];
+    const meetings = ['meeting-2026', 'meeting-2025'].map(id => ({ ...this.content.pages[id], href: '#/' + id, edition: id.endsWith('2026') ? 'Second NVSN meeting · Upcoming' : 'First NVSN meeting · Archive', registration: id.endsWith('2026') ? 'Sign-up and deadline to be announced' : 'Registration closed · deadline was 7 May 2025' }));
+    const about = this.content.pages.about.sections;
+    const daysLeft = Math.max(0, Math.ceil((new Date(2026, 11, 7) - new Date()) / 864e5));
     return {
-      tabs, isHome: tab === 'Home', isMembers: tab === 'Members', isMeetings: tab === 'Meetings',
-      title: head[0], kicker: head[1],
-      goMembers: () => this.setTab('Members'), goMeetings: () => this.setTab('Meetings'),
-      pins, groups, byCountry, chips,
-      latLines: [65, 62.5, 60, 57.5, 55].map(l => ({ top: ((67 - l) / 13 * 100) + '%', label: l + '° N' })),
+      title: page?.title ?? 'Page not found', kicker: page?.kicker ?? 'Nordic Vision Science Network', source: page?.source ?? '', hasSource: !!page,
+      headerImage: page?.header ?? 'assets/nvsn-header.png', heroClass: page?.header ? 'meeting-hero' : '', articleClass: type === 'exchange' ? 'exchange-section' : '',
+      isHome: type === 'home', isMembers: type === 'members', isMeetings: type === 'meetings', isArticle: ['about', 'exchange'].includes(type), isSteering: type === 'steering', isMeeting: type === 'meeting', isProgramme: type === 'programme', notFound: !page,
+      menuOpen: this.state.menuOpen, menuClass: this.state.menuOpen ? 'primary-nav is-open' : 'primary-nav', toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })), closeMenu: () => this.setState({ menuOpen: false }),
+      tabs: [['Home', 'home'], ['Members', 'members'], ['Exchange', 'exchange'], ['Meetings', 'meetings'], ['About', 'about']].map(([label, id]) => ({ label, href: '#/' + id, current: id === activeNav ? 'page' : undefined })),
+      showAboutNav: ['about', 'steering'].includes(route), aboutCurrent: route === 'about' ? 'page' : undefined, steeringCurrent: route === 'steering' ? 'page' : undefined,
+      articleSections, steering: this.content.steering, conferences: this.content.conferences, meetings, youngScientists: this.content.youngScientists,
+      hasSelectedMember: !!member, showDirectory: !member, selectedMember: member ? { ...member, kindLabel: member.young ? 'Young network scientist' : 'Network research group' } : {},
+      meeting: type === 'meeting' ? page : { documents: [], days: [] }, programme: type === 'programme' ? page : { sessions: [] },
+      programmeDays: type === 'programme' ? page.days.map(day => ({ ...day, current: day.href === '#/' + route ? 'page' : undefined })) : [],
+      groups, byCountry, hasNoGroups: !filtered.length, showYoung: ['All', 'Sweden', 'Stockholm'].includes(filter),
+      chips: ['All', ...this.countries].map(country => ({ label: country, pressed: countryFilter === country, onClick: () => this.setFilter(country) })),
+      labCount: this.content.labs.length, countryCount: this.countries.length,
+      daysLeft, showCountdown: (this.props.showCountdown ?? true) && daysLeft > 0, showMeetingCountdown: route === 'meeting-2026' && (this.props.showCountdown ?? true) && daysLeft > 0,
       mission: [
-        { padL: '48px', br: '1px solid rgba(232,236,240,.1)', icon: 'assets/glyph-strengthen.svg', color: G, glow: 'oklch(0.85 0.094 160 / .55)', title: 'Strengthen Vision Science', body: 'The Nordic Vision Science Network is established to strengthen vision research in the Nordic and Scandinavian region.' },
-        { padL: '32px', br: '1px solid rgba(232,236,240,.1)', icon: 'assets/glyph-collaboration.svg', color: 'oklch(0.78 0.072 200)', glow: 'oklch(0.75 0.077 200 / .55)', title: 'Increasing Collaboration', body: 'Providing a hub connecting researchers from different universities and supporting collaborative research projects.' },
-        { padL: '32px', br: '0', icon: 'assets/glyph-exchange.svg', color: 'oklch(0.72 0.099 340)', glow: 'oklch(0.68 0.110 345 / .55)', title: 'Knowledge Exchange', body: 'Enhancing exchange not only between research groups, but also students and future vision scientists.' }
+        { icon: 'assets/glyph-strengthen.svg', title: 'Strengthen Vision Science', body: 'The Nordic Vision Science Network is established to strengthen vision research in the Nordic and Scandinavian region.' },
+        { icon: 'assets/glyph-collaboration.svg', title: 'Increasing Collaboration', body: 'Providing a hub connecting researchers from different universities and supporting collaborative research projects.' },
+        { icon: 'assets/glyph-exchange.svg', title: 'Knowledge Exchange', body: 'Enhancing exchange not only between research groups, but also students and future vision scientists.' }
       ],
-      photos: [{ caption: 'First NVSN meeting, Bergen 2025' }, { caption: 'NNM 2024 symposium, Copenhagen' }, { caption: 'AAU 2024 symposium, Aalborg' }, { caption: 'Photo — member lab' }],
+      photos: [
+        { caption: 'Establishing the network, Copenhagen 2024', image: about.find(s => s.title === 'Establishing the network').image, href: '#/about' },
+        { caption: 'NNM 2024 symposium', image: about.find(s => s.title === 'NNM 2024 symposium').image, href: '#/about' },
+        { caption: 'AAU 2024 symposium', image: about.find(s => s.title === 'AAU 2024 symposium').image, href: '#/about' },
+        { caption: 'First NVSN meeting, Bergen 2025', image: about.find(s => s.title === 'First NVSN meeting').image, href: '#/meeting-2025' }
+      ],
       timeline: [
-        { date: 'Early 2024', text: 'Founded at the 4th Nordic Neuroscience Meeting, Copenhagen' },
-        { date: '2024', text: 'Symposium on Synaesthesia, Perception, and Individual differences, Aalborg' },
-        { date: '6 January 2025', text: 'Web page launch' },
-        { date: '3–6 June 2025', text: 'First NVSN meeting, Bergen' },
-        { date: '7–9 December 2026', text: 'NVSN meeting, Aalborg' }
-      ].map((e, i) => ({ ...e, dot: i === 4 ? G : '#e8ecf0', glow: i === 4 ? 'oklch(0.85 0.094 160 / .6)' : 'transparent' })),
-      days2026: [{ day: 'Monday', date: '7 December' }, { day: 'Tuesday', date: '8 December' }, { day: 'Wednesday', date: '9 December' }],
-      labCount: this.labs.length, countryCount: 6,
-      daysLeft: Math.max(0, Math.ceil((new Date(2026, 11, 7) - new Date()) / 864e5)),
-      showCountdown: this.props.showCountdown ?? true,
-      steering: [
-        { role: 'Denmark', name: 'Anna Dreneva', uni: 'Danish Technical University' },
-        { role: 'Finland', name: 'Kaisa Tiippana', uni: 'University of Helsinki' },
-        { role: 'Iceland', name: 'Sabrina Hansmann-Roth', uni: 'University of Iceland' },
-        { role: 'Norway', name: 'Andrey Chetverikov', uni: 'University of Bergen' },
-        { role: 'Sweden', name: 'Andrey Nikolaev', uni: 'Lund University' },
-        { role: 'Web page', name: 'Thomas Alrik Sørensen', uni: 'Aalborg University' }
+        { date: 'Early 2024', text: 'Founded at the 4th Nordic Neuroscience Meeting, Copenhagen', href: '#/about' },
+        { date: '2024', text: 'Synaesthesia, Perception, and Individual differences symposium, Aalborg', href: '#/about' },
+        { date: '6 January 2025', text: 'Web page launch', href: '#/about' },
+        { date: '3–6 June 2025', text: 'First NVSN meeting, Bergen', href: '#/meeting-2025' },
+        { date: '7–9 December 2026', text: 'Second NVSN meeting, Aalborg', href: '#/meeting-2026' }
       ]
     };
   }

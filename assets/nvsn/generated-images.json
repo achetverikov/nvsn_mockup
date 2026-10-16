@@ -1,0 +1,25 @@
+{
+  "tool": "built-in image_gen",
+  "aspect_ratio": "3:2",
+  "dimensions": [
+    1536,
+    1024
+  ],
+  "assets": [
+    {
+      "path": "assets/nvsn/exchange-collaboration-landscape.png",
+      "reference": "unused/materials/exchange-originals/exchange-02.jpg",
+      "prompt": "Use case: style-transfer. Redraw this reference as a finished LANDSCAPE illustration, EXACT aspect ratio 3:2, ideally 1536 by 1024 pixels, for a Nordic vision science website. Reference image is the edit/style target. Preserve the distinctive art deco / vintage screen-print style, dark midnight navy backdrop, flowing layered emerald/teal/lime aurora ribbons, delicate cream geometric linework, small network nodes and subtle paper grain. Recompose the WHOLE artwork to fill the landscape canvas naturally, not a crop of the square. Subject: a balanced arc of simple stylized human silhouettes joining hands across the lower half, with luminous interconnected network nodes and aurora above, expressing scientific collaboration. Finish all linework cleanly and keep human forms intentional, elegant and readable. Give the central composition breathing room and keep key elements away from the outer 8% edge. No lettering, text, logos, watermark or UI. One single cohesive illustration, no panel collage. Opaque background."
+    },
+    {
+      "path": "assets/nvsn/exchange-education-landscape.png",
+      "reference": "unused/materials/exchange-originals/exchange-04.jpg",
+      "prompt": "Use case: style-transfer. Redraw this reference as a finished LANDSCAPE illustration, EXACT aspect ratio 3:2, ideally 1536 by 1024 pixels, for the Knowledge and Education section of a Nordic vision science website. Reference image is the edit/style target. Keep its art deco / vintage screen-print visual language, dark navy background, flowing emerald/teal/lime aurora, cream geometric lines and nodes, architectural Nordic campus motifs and fine textured print grain. Repair the broken composition and REMOVE ALL text entirely. Create a new coherent wide composition: two stylized Nordic university buildings connected by a broad graceful aurora ribbon carrying small luminous knowledge/network nodes, with subtle open-book or learning motifs integrated into the elegant geometric border. Emphasize knowledge exchange and training rather than literal signage. Recompose for 3:2 rather than cropping a square; all motifs must be complete and have generous margins. NO words, letters, numbers, signage, logos, watermark or UI. One cohesive illustration, no split panels. Opaque background."
+    },
+    {
+      "path": "assets/nvsn/exchange-mobility-landscape.png",
+      "reference": "unused/materials/exchange-originals/exchange-06.png",
+      "prompt": "Use case: style-transfer. Redraw this reference as a finished LANDSCAPE illustration, EXACT aspect ratio 3:2, ideally 1536 by 1024 pixels, for Erasmus+ student/staff mobility on a Nordic vision science website. Reference image is the edit/style target. Preserve its distinctive art deco screen-print style, dark navy base, emerald/teal/lime flowing ribbons, cream circles and fine geometric linework, subtle paper grain, and the abstract eye/vision motif. Recompose into a natural wide layout with a complete stylized human profile on one side, a luminous eye motif flowing into aurora across the lower center, and a delicate compass/network constellation on the other side, suggesting learning, travel and exchange between universities. All frames and decorative arcs should finish cleanly with safe margins; do not crop the profile or key motifs. NO lettering, text, logos, flags, watermark or UI. No panel collage, one balanced cohesive illustration. Opaque background."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+html,body{margin:0;height:100%;background:radial-gradient(ellipse at 50% 0%,#0f1d33,#070d19 70%);color:#e8ecf0;color-scheme:dark;overflow:hidden;font:14px/1.45 'Instrument Sans',sans-serif}
+*{box-sizing:border-box}
+svg{display:block;width:100%;height:100%}
+.pin{cursor:pointer;outline:none}
+.pin:focus-visible .pin-ring{stroke:#fff;stroke-width:2}
+.pin.is-selected .pin-ring{stroke:#a6ebcf;stroke-width:2;fill:rgba(166,235,207,.12)}
+.pin:hover .pin-ring{stroke:#a6ebcf;stroke-width:1.5}
+.pin-label{paint-order:stroke;stroke:#0a1322;stroke-width:3px;stroke-linejoin:round;fill:#dfe6ec;font-size:12px;cursor:pointer}
+.cluster-count{fill:#060c18;font-size:10px;font-weight:600;pointer-events:none}
+.map-status{position:absolute;inset:20px;color:#b9c4ce}
+.map-popup{position:absolute;z-index:2;width:280px;max-width:calc(100% - 24px);padding:18px;border:1px solid #648c82;border-radius:10px;background:#0b1728;box-shadow:0 8px 30px rgba(0,0,0,.55)}
+.map-popup[hidden]{display:none}
+.map-popup h2{margin:0 24px 4px 0;font-size:16px;font-weight:600}
+.map-popup p{margin:0 0 12px;color:#a9b6c3;font-size:12px}
+.popup-close{position:absolute;top:8px;right:8px;background:none;border:0;color:#dfe6ec;font-size:22px;cursor:pointer;padding:0 6px}
+.member-choice{display:block;width:100%;padding:12px 0;border:0;border-top:1px solid rgba(232,236,240,.14);background:none;color:#a6ebcf;text-align:left;font:inherit;cursor:pointer}
+.member-choice:last-child{padding-bottom:0}
+.member-choice strong{display:block;font-weight:500}
+.member-choice small{display:block;margin-top:3px;color:#a9b6c3;font-size:12px}
+button:focus-visible{outline:2px solid #a6ebcf;outline-offset:3px}

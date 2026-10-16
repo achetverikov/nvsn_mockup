@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NVSN member map</title>
+<link rel="stylesheet" href="assets/nvsn-map.css">
+<script defer src="nvsn-content.js"></script>
+<script defer src="assets/vendor/d3-7.9.0.min.js"></script>
+<script defer src="assets/vendor/topojson-client-3.1.0.min.js"></script>
+<script defer src="assets/vendor/world-countries-50m.js"></script>
+<script defer src="assets/nvsn-map.js"></script>
+</head>
+<body>
+<p id="map-status" class="map-status" role="status">Loading member map…</p>
+<svg id="m" role="group" aria-label="Interactive map of NVSN members. Select a city to open a lab or choose between labs."></svg>
+<div id="map-popup" class="map-popup" role="dialog" aria-modal="false" aria-labelledby="popup-title" aria-describedby="popup-description" hidden>
+  <button id="popup-close" class="popup-close" type="button" aria-label="Close lab choices">×</button>
+  <h2 id="popup-title"></h2>
+  <p id="popup-description"></p>
+  <div id="member-choices"></div>
+</div>
+</body>
+</html>

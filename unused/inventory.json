@@ -1,0 +1,123 @@
+{
+  "description": "Earlier mockups and materials unused by the current Polar Night v2 site. No materials were deleted.",
+  "moves": [
+    {
+      "from": "NVSN Mockups.dc.html",
+      "to": "unused/mockups/NVSN Mockups.dc.html",
+      "sha256": "e3c267bc58ad814669fedb6e3eb1cfa52a28dac40664cd5efc0c8211eaf7a2b1",
+      "archived_sha256": "b6bf2b3770247e3835531db927d9c4eeff784384d2d7ce981f7b17fb42ab14cb",
+      "adjustment": "Updated relative path to shared support.js runtime."
+    },
+    {
+      "from": "NVSN Mockups v2.dc.html",
+      "to": "unused/mockups/NVSN Mockups v2.dc.html",
+      "sha256": "0602e929168e64733a4f106a20cbd0ffa0f2253c75e2c0eaafd92c0a3f654327",
+      "archived_sha256": "2390898c56dc34aecdfdc131df40e3579f9e0459458ff0b634eda325e14ef160",
+      "adjustment": "Updated relative path to shared support.js runtime."
+    },
+    {
+      "from": "NVSN Mockups v3.dc.html",
+      "to": "unused/mockups/NVSN Mockups v3.dc.html",
+      "sha256": "f34142290a233deb0438f73642d96f50235e1fffd8a25fbe0c2a44b69b5a6e20",
+      "archived_sha256": "6ee820540032d62a21670e459c0e1073a606bc448f11e6c5f627bdbec7cabdb5",
+      "adjustment": "Updated relative path to shared support.js runtime."
+    },
+    {
+      "from": "NVSN Polar Night.dc.html",
+      "to": "unused/mockups/NVSN Polar Night.dc.html",
+      "sha256": "23e948366abbf55036ee1eae2f4f9b9149a5c91e459e7ff810ad229524f93db1",
+      "archived_sha256": "30c7cf02621f75c17e1617e9bd587d88d2723b4ec27eac25ba5560ff863e108c",
+      "adjustment": "Updated relative path to shared support.js runtime."
+    },
+    {
+      "from": "download",
+      "to": "unused/materials/download",
+      "sha256": "9e3d1d07571147bf3fba79fbf606071f3c3e5d22e8b663ef1ca6bf379a9e8126"
+    },
+    {
+      "from": "glyph-exchange.svg",
+      "to": "unused/materials/glyph-exchange.svg",
+      "sha256": "a3eb557fc8f72743916bbe9d7155e366860537afbcccd2eead6e3c377e7dbc5b"
+    },
+    {
+      "from": "glyph-strengthen.svg",
+      "to": "unused/materials/glyph-strengthen.svg",
+      "sha256": "7559fabab2e0085bbb627a1971a43315a7a06d20021f65f4eb9c92eda39016e2"
+    },
+    {
+      "from": "rune-collaboration.png",
+      "to": "unused/materials/rune-collaboration.png",
+      "sha256": "147cbce927e35be1e85d2745fbbf8bea44a0723ca7ef202e1b42d69243b9cf71"
+    },
+    {
+      "from": "rune-exchange.png",
+      "to": "unused/materials/rune-exchange.png",
+      "sha256": "2797074241dcd2374860679423e68fda6b1e3d32ea0d6ccd3dfcc6756ce423f5"
+    },
+    {
+      "from": "rune-strengthen.png",
+      "to": "unused/materials/rune-strengthen.png",
+      "sha256": "c710625cbb0b1773de1bdfb8c2da751d30f7487189392d900f0bd338debc3a9a"
+    },
+    {
+      "from": "runes-1792158478336-bkko.jpg",
+      "to": "unused/materials/runes-1792158478336-bkko.jpg",
+      "sha256": "45ed47037ce6d30a662d9e3975a21069547c3a6ef7142f82eec3d7e43bf0b5ef"
+    },
+    {
+      "from": "runes-1792158478477-gind.png",
+      "to": "unused/materials/runes-1792158478477-gind.png",
+      "sha256": "17f23afe8aafa1678c8db2c12590537fd73e3d0a2566eff921cd364a3c1f2d77"
+    },
+    {
+      "from": "assets/rune-collaboration.png",
+      "to": "unused/assets/rune-collaboration.png",
+      "sha256": "2797074241dcd2374860679423e68fda6b1e3d32ea0d6ccd3dfcc6756ce423f5"
+    },
+    {
+      "from": "assets/rune-exchange.png",
+      "to": "unused/assets/rune-exchange.png",
+      "sha256": "c710625cbb0b1773de1bdfb8c2da751d30f7487189392d900f0bd338debc3a9a"
+    },
+    {
+      "from": "assets/rune-strengthen.png",
+      "to": "unused/assets/rune-strengthen.png",
+      "sha256": "45ed47037ce6d30a662d9e3975a21069547c3a6ef7142f82eec3d7e43bf0b5ef"
+    },
+    {
+      "from": "uploads/runes-1792158478336-bkko.jpg",
+      "to": "unused/uploads/runes-1792158478336-bkko.jpg",
+      "sha256": "17f23afe8aafa1678c8db2c12590537fd73e3d0a2566eff921cd364a3c1f2d77"
+    },
+    {
+      "from": "uploads/runes-1792158478360-sz0g.jpg",
+      "to": "unused/uploads/runes-1792158478360-sz0g.jpg",
+      "sha256": "9e3d1d07571147bf3fba79fbf606071f3c3e5d22e8b663ef1ca6bf379a9e8126"
+    },
+    {
+      "from": "uploads/runes-1792158478477-gind.png",
+      "to": "unused/uploads/runes-1792158478477-gind.png",
+      "sha256": "4e35dcb40589c502e71889ee6d3e8bda5631cbb142d6933157c38f56b7e2600e"
+    },
+    {
+      "from": "Firefly_expand to aspect ratio of 3 - 1 404607.png",
+      "to": "assets/nvsn-header.png",
+      "sha256": "950c907c73cf2c293c72ccb4f4a28271f6477d0e7df46b71218b85063fbd0a44"
+    },
+    {
+      "from": "assets/nvsn/exchange-02.jpg",
+      "to": "unused/materials/exchange-originals/exchange-02.jpg",
+      "sha256": "573311c723f1f7dba27fe1139ce27ecdb319fd0b91e3a6d37be581270aafd318"
+    },
+    {
+      "from": "assets/nvsn/exchange-04.jpg",
+      "to": "unused/materials/exchange-originals/exchange-04.jpg",
+      "sha256": "359c695c4b0515de2b84b2df3cd2ec1ca3cf663975b7105b19b665a143e45258"
+    },
+    {
+      "from": "assets/nvsn/exchange-06.png",
+      "to": "unused/materials/exchange-originals/exchange-06.png",
+      "sha256": "d585f346eb62d7cba7dd4ffcd62febb23b0f571fdc5c3e75752761c3f8131878"
+    }
+  ]
+}

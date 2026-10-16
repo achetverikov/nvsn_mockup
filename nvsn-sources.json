@@ -1,0 +1,295 @@
+{
+  "retrieved_at": "2026-10-16T14:44:09.989359+00:00",
+  "pages": [
+    {
+      "route": "exchange",
+      "url": "https://sites.google.com/view/nvsn/exchange"
+    },
+    {
+      "route": "home",
+      "url": "https://sites.google.com/view/nvsn/home"
+    },
+    {
+      "route": "about",
+      "url": "https://sites.google.com/view/nvsn/home/about"
+    },
+    {
+      "route": "steering",
+      "url": "https://sites.google.com/view/nvsn/home/nvsn-steering-group"
+    },
+    {
+      "route": "meetings",
+      "url": "https://sites.google.com/view/nvsn/meetings"
+    },
+    {
+      "route": "meeting-2025",
+      "url": "https://sites.google.com/view/nvsn/meetings/nvsn-meeting-2025"
+    },
+    {
+      "route": "meeting-2025/friday",
+      "url": "https://sites.google.com/view/nvsn/meetings/nvsn-meeting-2025/friday"
+    },
+    {
+      "route": "meeting-2025/thursday",
+      "url": "https://sites.google.com/view/nvsn/meetings/nvsn-meeting-2025/thursday"
+    },
+    {
+      "route": "meeting-2025/tuesday",
+      "url": "https://sites.google.com/view/nvsn/meetings/nvsn-meeting-2025/tuesday"
+    },
+    {
+      "route": "meeting-2025/wednesday",
+      "url": "https://sites.google.com/view/nvsn/meetings/nvsn-meeting-2025/wednesday"
+    },
+    {
+      "route": "meeting-2026",
+      "url": "https://sites.google.com/view/nvsn/meetings/nvsn-meeting-2026"
+    },
+    {
+      "route": "meeting-2026/monday",
+      "url": "https://sites.google.com/view/nvsn/meetings/nvsn-meeting-2026/monday"
+    },
+    {
+      "route": "meeting-2026/tuesday",
+      "url": "https://sites.google.com/view/nvsn/meetings/nvsn-meeting-2026/tuesday"
+    },
+    {
+      "route": "meeting-2026/wednesday",
+      "url": "https://sites.google.com/view/nvsn/meetings/nvsn-meeting-2026/wednesday"
+    },
+    {
+      "route": "members",
+      "url": "https://sites.google.com/view/nvsn/members"
+    }
+  ],
+  "assets": [
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72uuH1P5In4BqOcV0H8qFVR-X7vMdxhFvb4AXGumXR47RfyQ99KL0smKe2vW7Ck--WncR14O8NDrJq6LeS6zKr8CspfG5_P8DbUWJ463cgxogMxNakoxKmKerQe8CcQp90Q1EJYDksSg4m3g9RjGIuXWNCA0M7xBjjwgGfk1kaFhIDpHZvsyObzVIiY2wc4=w1280",
+      "path": "unused/materials/exchange-originals/exchange-02.jpg",
+      "sha256": "573311c723f1f7dba27fe1139ce27ecdb319fd0b91e3a6d37be581270aafd318",
+      "bytes": 559009
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72u2XHD0L_CdVwtzRtbLhGy8PpoAEyKgvkO5d9KJioobYUrKNxrkf9U1s4rAkgle4zt7XPE8awCtovHqMjocj1teez32TBkuUzAaMmVhM9T91-koeC7POpSZlMMjUIjWynv4hr73N6lEYrQdaXLebKY5SswSGUomLoMDBfRLH-HUaxCGk9a1f9mlTKJ-1cw=w1280",
+      "path": "unused/materials/exchange-originals/exchange-04.jpg",
+      "sha256": "359c695c4b0515de2b84b2df3cd2ec1ca3cf663975b7105b19b665a143e45258",
+      "bytes": 449712
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72sEy7hU8L429D4SCdCHFGQxe179p1B7pXoqBHY-VzcqcOJDrE3XvJk0MpOjrCno4jxEI-X4eUzg08HR1zm6JVvpRqrUR3PVbsyRFzFO5vfbg3zMJUM84r2oBKC2Rd_Q0OeedZOqF9FOa01zdlbkzhgPtdUKFGAfPdkVmcWkW0JkO4iQql_tfZNX5myMacs=w1280",
+      "path": "unused/materials/exchange-originals/exchange-06.png",
+      "sha256": "d585f346eb62d7cba7dd4ffcd62febb23b0f571fdc5c3e75752761c3f8131878",
+      "bytes": 1687870
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72u0zYB01blj76Wm8NoZfWLh1fXfhJhe6UOeh-Mzm60EA5IqWOkz4dwsOKSS0xqA36Ph93Hl4fF3dGExBBeXocrpo18ItYlS2doTAmQ4KWKkNzBbRMIFbUbt9p5Z2maCB7xzQNbczTTelTR721bBwaeoJKNuZSkFUbArrMyQEHe_KkyE7mH9qd9Mba9XnF-nFr_HlMZIRJbGKnZm41-lV2B8FrEDNLIzbj1A9RcBC3A=w1280",
+      "path": "assets/nvsn/about-02.png",
+      "sha256": "d6b3a7a8c02f543eb74c93d9f206cf3f7f9471bc60e8890695f776293ed02b78",
+      "bytes": 911109
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72vn_ef8QYSkcm7RD7v3jvXou_0Gn-Yk2oa00rnM8hyvPJh32SEw80yeK_UJuexQGhDV9UEAmtCtn3cT1woCSLLsFKGpMtzJB-n5xBFcIFerlSEzuWTVjjAZUGs4vvoCpTnA8i0WRk11Qh07V1MrqGB0qGb21uSMaEGcQsOqHXEmsYtjZ8eTO5tGAVl_T6HM6k4VLqe08ROfE_O9ebUf0R6KOYBw4bntaB2hqTuOiU0=w1280",
+      "path": "assets/nvsn/about-04.png",
+      "sha256": "d51d9dbdc76c79e1137157884277f293ee962784a542b140f12bcde019b4e0ac",
+      "bytes": 295001
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72uWXIX5xX7rA1XUueR31sNcdWyn0ELPymrb6A9wFQ0CRQT8PjNB_HaKSYZlj1DV8sSNAJznpFs43kw6Jp6AJB3xwWYtXC5afrFBOSiCcu5B0Sa1jayLBA8oCFxToJ0c6Js_RwoKIEg8VX4lUwrS0wkWx9Q-rSJ7vidDGJDbslqwtMthRjmz3ykZL9EGmq84Dg-7mEftuhVK7STOdylUmgJi5HvbZPSibSgJWWd08v0=w1280",
+      "path": "assets/nvsn/about-06.png",
+      "sha256": "d06f7a59b589898e9004c9c9e391fd0501196e00079c8679932c9da1ee2c6a58",
+      "bytes": 166577
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72v_wj4ZEf4KU_M7bSnfq1UpD8KaU4cGHT1okftburBOplANUzEe97HchbfFZBkZE15HGb34Og2KI7r6Dpiq9AimZ104_dTIPGpCgW2z6kPZOUtdB11Ovx8A2izoTkGg2FHCqLxsIt9hBVfbtnybIT-dwBAYgUA899yYDdjWx2IGumQGK5T7JbEicWJuV_w=w1280",
+      "path": "assets/nvsn/about-08.png",
+      "sha256": "8651d0c43b6612e80c343ef102e68cbcbfe0853ad9f25a82bf479abc6a43ef6d",
+      "bytes": 1288323
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72sTjTCrktUStElFWdkMMp6fw21K8b6__9s1WnqwXkEbjYI9LMx8cVhKrzvwL5yUs6a5xUq-rZTYAEQSPsgaw3PKaEKQ6JoYKQkVDASgVNLAGdhTkUdA49fZn7w1pY1v0R88SJ4azfnFG2np1UTc8R2a2qbISQTjEKhN-pZ-X0Ahp6T5aNHgZaM9kTjgvenXpOTGUMJXa-sWMEXvEU-5E87T-xZIkJsL50xB8zkYD9M=w1280",
+      "path": "assets/nvsn/about-10.png",
+      "sha256": "35585fc0cd42510457e8fb29379a8592051307250f7da16be9752790e3064381",
+      "bytes": 1204956
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72tWo4rSNnjyubEU2eFa1x0RxMC4uhHo2ZM2tCx9PdInO159ZyPZX_IqFKQdIl505_rgLNRQzwBYu5JDOdti5x9nquuGZGpW8wkYkhXHq4SICWId4oamLfaREutbMnew5zP7HV1EBCwHH51wVYoKcGJifD9YAnUz4ssQRwnuy2dKyYOFno8osehbnCvnr5nM5e2XMVmDBE-tc1SVC60_HsPLWl8P4pDqKSaoceuE=w1280",
+      "path": "assets/nvsn/steering-02.png",
+      "sha256": "d83998ec80d5dc44bdb4fd0e5aeaa1740a321e54c8573c7d4ca216845f46ddb8",
+      "bytes": 1382173
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72uvWER8OdPiea0kD5NRL6bu2eXEO0EY1lYRQthuM_d9Vfws9f2VpDZC-BRXqEG4a6ZVGsWOapKPkvYsVAtCFjJvBYtvKN_KsAAzeT-60xito8KkrXM76BzpDwwW0-UVNdLjLz2vmw7m9BLc8lDdEtkTkt5300w9FDzWjUa9MXVI3FachlNZvshIsre5uZe9_1WV8eVZjdWIgGfNsELGIhI8azywWlTI2jLO0HAh=w1280",
+      "path": "assets/nvsn/steering-03.png",
+      "sha256": "ded3ba7c9ef1a1c300cf0a4821063bd4eea86f725bcc2092c765016f6819416e",
+      "bytes": 1393859
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72v5qPQiXSCnLvXmJs5XZUlCPBL9SnqmRlIxbn9zuBFACrrXR-pJCUJ38xGGA7PKpwJh1ZtxtaYj-GClsyrVAvI88kZW-gwGKOhlf2OfxwY3TJvEIqM1SNrBz6UcHmnqTTN4AUhMen3kpbxHbImiliEu5RKw2_Ac3LJc24vSMEy0IP6p0nr9tiLSrPj3eVF0L543-6Pr1sfMkO_2NE9743oGQlKMD5qDjPuje5g_h8Y=w1280",
+      "path": "assets/nvsn/steering-04.png",
+      "sha256": "effb7f6a8e6552fa614fabed0d97dc6255f695e9c85357838f3935b455c74ae5",
+      "bytes": 1531994
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72uy8TT3OzXDAKvTNNYWa3DHgZk-2YxrXfsCqg5Abto7CefJl9iABSePRpKYGR5kGdxWNKrA2JibtSYGVHryv-35KyGp69XZ41-1QO-njfEKHWWXD54GB_Pnz8C12Bvt1i-ArfWxc7bTFNyZs81H8JkYxF74B1ryjtz0FHeGuCwkiS1NXWmQ99hcNgQ8XLgyOhnzfcv5LKMBLjjkTIDmNEckuUJqTMdcHxALVjsV=w1280",
+      "path": "assets/nvsn/steering-05.png",
+      "sha256": "b591e73c718526262aaf44e01990cb45de0166fe9edbeb2eaa5151e6066b5e2e",
+      "bytes": 1504417
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72ucPoZ4xyRDK38w3Vzf4OhMDGKthG8g9a5XFP8OnjRmcbegCf6ACtpvn9gOFdoRY3HJe6t656JbeiXkiVVXmpAFOXVggG8EeMJPt332IEtnQm78651x4mSTpTc52Y00aaKhiimDNY7S5T3vIQKBElhSqqwSCPl1iyww23fVBWKgRJLTleMIz5SPTQnYNNwheRiY9p0MmntI7L82CUop-pchDuXXeQzwE_ES0FLK3mc=w1280",
+      "path": "assets/nvsn/steering-06.png",
+      "sha256": "f556a26af5811b8ee490b7095a22bd41625809380dbc327b41fe47ba5686a84c",
+      "bytes": 1533488
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72t3btAwZ1H4-HNT5mwozcacxkWO4hDtDqiGN1s_PewJKdlHg81gBsMZPF3pXRK0E0cXmjoSIShRZm4D6mPTvBQF012HDXCCIkDG93-d_LbFE5OepwQTiEewRZ1IdATtwYAGuPjfhjbiatdNRXaCFf96dtSDvKU0QktettJXqYqhnBejSbJ9Y1uC_eEItkLJTkktGXz5oM-KCYobIJNOufN0uEEpGv6wIsG2_w=w1280",
+      "path": "assets/nvsn/steering-08.png",
+      "sha256": "3f073e450cdf35fa9d87aa4994e8667d270ad5e627e7c73505e81e54a8a12050",
+      "bytes": 1451793
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72tblWVq6wFnUQos2PHREy29UroxHARYDGBE3j75BD5uc50TDxAMVoAfgtV7r7nr0SWWTgJPVoEUL291EycOn6FzC7NGhMNBqVvkIa-ioBX8qvIlWPJB06puYgcamR0_XKblMl8_jmLs0jUvBkJXhdrAc8xniXYkvPrqs7G8phhPDruAb2Aglimh0Tf1_rx_Q-6er1ZjaWh8AJoTZzMTBj-tSu-K07znQ1YFtDpc2LE=w1280",
+      "path": "assets/nvsn/meetings-02.png",
+      "sha256": "551dfcd834577b8477be2d6c1c5b15334ce0827d7d9e78f88eb58a6b54bc6fe6",
+      "bytes": 2054039
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72v8d_q3pSWzFzhQ9EDFtEhXcFd0Y0rBFvTSGsLtBydhbheoMDTaoGLQC6IuBuJeyvCnbxx4-PoUsp4hsriCVNt0guv5CA9i5spwCSUpvcFHf3lf3eVt8OYLvKDyuFNSQRHvIUl0L0VFIib5fVeyTelFk5N-HUltPJL7dVAte1ggn0k1UQCh7WKvyU1g8OZ_GhhG6WHYmLRxP2OmHRgl2nzWh1vG2LdbX5z7c9c-=w1280",
+      "path": "assets/nvsn/meetings-03.png",
+      "sha256": "a137dbab0475590f3e4fb3770a77cc5e9d24be013c91c59bf0430774bd7fae50",
+      "bytes": 2270890
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72s07xvYGMXXm13LtnIwbB-Yz4rL7oGBQxTaaHzRQIZwGEj9qyOZQQi8OWN9BQvGOF-Ni1MNGnOI9YhZzEImb0ScI2SCH1CzXoYwjFyS6UN_9-wb2l7rCYXcu9Jhg4qxHp44UN37YkgoKeXdNGB1PAo4g2N1XqA4vxyqFwlgKxb2EjV_AcNfJy4b3kUopgv_Kl5J9Ct6OnrZMSOR2pcJNzvBDHg39W9F3woaQayYZjE=w1280",
+      "path": "assets/nvsn/meetings-06.png",
+      "sha256": "8e142a32318e25082e1aa805e2442fb33e1601ed5158865d0fbadf0a6f75de20",
+      "bytes": 53990
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72u5RIl5xoa7Bq1KWrOFubcSdPSbj1JZ98ZQ9-NOCUoDW_Mpwj8tzCVrs61hXMGN1yhEAfJ6J-mJmMRQf_3zri_ihcLONV303uh89-Ho-0yVEoo1Uk8B-c0KzyVt1d11s73bEyz5MTPgJHVxWEWm3FRo9h_0OH6aCu61GrhnjeYpuCoL7yEJutkLkJ_iryF6iiGW1TvJagFtNuRiid_8BFwH_uhJfpPMx7NNrkLY=w1280",
+      "path": "assets/nvsn/meetings-10.png",
+      "sha256": "01ee41f847bef992252dc9197ca1500f0433e8cae043b43685425f4c87f569b0",
+      "bytes": 548144
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72u2EzAM2RIWVcibvCtm5_HrxBrF3omd5HxQDz9NdYNyHcefH-m57FQ2Aww1-FRXj9h4conc3ALiE-VEpt3m2-Ei8-M1sW-n5Uk-EJ6oB9H_2EO7xZbpeRvaY8YMnvMOEvc4CdBgv-Znp734SyKydwh5JbgdbBV1jsDO07gCSDTNMHSmsMVNW5-fLn3NS-rvsTdZZKNxcly-46Le7QrjL1yzg6qjqvlASuAbVSrM9jo=w1280",
+      "path": "assets/nvsn/meetings-12.png",
+      "sha256": "f26195249ab27debd559d703c3eaf4741c514a9afb32b30a667fdbb8148d5d29",
+      "bytes": 774480
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72tTg-yoOYNIeSijcx4ozwfMNcXAKXTkQAYsFm7lE0fubR4UNvgwpXP4YNRWxmFoXHoyqQIDkOpfPJCypECEjpY2XEyn3k_iICP8Y1ibaQCJvcIYVYBa0uC7SYGpZ_zrwYzWEhyOiyQERRhBl5y1Tzrc3sKbZsERzL6UzfuGXGQQ6Lv2AYDIMYyJZ5XC9mWkAskJFkp6wwVuwumYDdouWw5vFhks9tXP4almeP19=w1280",
+      "path": "assets/nvsn/meetings-14.png",
+      "sha256": "fd6f47b01ecc17526a6839855a5a50688d5eca60100203020ed8559649ffe653",
+      "bytes": 76385
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72uLBa7y96dacMIkA0NcP8yRiXxyUxnyArVs8fqvg-__PjzHL6xvVAWHX_oPgWPjOkyP46ETCTIhDrDAhwn-ye-FYFPhu6fJeu03b8K1IGhlnSqty0Df5NUGy8KO8iAmPta5hS2iUmgNQFE2E7hi64LNd5IRPzv6R1Q7laJ9_qS_5Ha5-Vo5IqSK7d0i--wQsAo6zJ6IYURDZSSuhF3aG7mYsU2nQ5HHRvM3rZuh_Os=w1280",
+      "path": "assets/nvsn/meetings-16.png",
+      "sha256": "04f4a8f8131bdab504e2e8ac769122d48f2d0d550b061e4ee845bda2f32b4011",
+      "bytes": 378475
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72tkoXXjL5h-TGRIon9Lf7F9gZe6giJ8RlUW1QUbGMJcIW0qQyr7rx9mx8jc5oHz1mHnyqp8FJ05VBWiqvmo0nBFpAG2lP434L_vKnppSmElVXkfzVkRT3o6NGCK2P4CWlv8nyponBjooNgskI_lfuBNREA1o5FH-p3GtfeFyzTvG3vH_Otb8trX3aVAQLjZPStfCpnaSOtfsWby_uHu2D5zhureMRHOt3hEoH9jTz8=w1280",
+      "path": "assets/nvsn/meetings-18.png",
+      "sha256": "78fdcdee6bb3179b814eb237e275fb6aeae9527889808ac8551602ef20231ece",
+      "bytes": 54330
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72tQP3ay6Nr-WfGGKBhVZaBbi4R2uYMarQ1giKLf7EG-tE9eW9WWjro4cP84rUqC1g0icxK1hGp6o9EJ4sgl9FVcJM59wkO6BVsZ2E728HGZWcOj-t3zx4r654nLdF8RJRKzzptfTcBZUF2gIRbu-2nK2rnbCys70fXOlWIrm80WAEWcl_qaIiOib5ws6xTANxKRu_fG7F3KzMQZGjyjX5-Jt02UYY-LGjNvRfPmT04=w1280",
+      "path": "assets/nvsn/meeting-2025-01.png",
+      "sha256": "367b493fce2f19e2ffd8d964adf6434b6512cc18e1c16dcdc83daef7d7aa3108",
+      "bytes": 1442768
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72sg9Ud1rztMxO01UmbU97Dye5N0xy5gbySwMLmylOyxfJBisq7lAP1Kf7d4QMIkZhBuDblICb8I6OxSSWtvmsYUacEgsTOPHcMspJFip7vJ4SJQPFCAMGV95K3IKaKJ7O-tBv9I_p9-jDiZv4abpzdbCF5Iyfx6vD05hhP-TcNQTRL19vH_MlQGYehwdGhIGxQd005VcOBuz6f7WKrJzHJXKk4STb8gOHHZivJw=w1280",
+      "path": "assets/nvsn/meeting-2026-01.png",
+      "sha256": "a859c1d140d5d4ef6cc2cc14dcb5e68b0737a6f95a39d7f1331e75f749418c1f",
+      "bytes": 1309621
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72sgdGkn3eLF4YMGQ49IVvFNj2kgdxP-cP8a5PFJDymx96ZL9nBugc_pJ2hDsAlbLz6bchumnhUffBKeIk_bytBr_ilifsGrs0GQIaqIAXlVYwKSQWfQavPU_f8vrEcty1RlkrB9qPl86TTdjYJAl4yhk2JD14S9YRqX1rXadubX-N2xqPWhEM4S4Itr5wW1BFjQMHewcdVByHNpq7xlxNxU64m_vD4zfCGG5t989BM=w1280",
+      "path": "assets/nvsn/meeting-2026-02.png",
+      "sha256": "f395561f4633500b55bc8febc3394be4fe36d2c3632f411c3bcf585d3dfcd73b",
+      "bytes": 156125
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72tK0vt5r4uzQCgwxTj2uo-uWNHPs6CFlvFnGUUdAKsPrpNyqdp124Wi8y8dPlO1GMxQnJ2G25XKUWsKmFA2R9cwYblHEy_V_EhtIs4BmwrKARNTeLE9vvw76TuC1zeyhz773XHJMIs708vSkAajDPrXS6u-8S-OjNcJyB6zN4R2Ch-eFIU7SYEGorLd6kYxOfvbID8zho0aPCmf9VY7A6hLqIFy7uhm3SZuXXXCbrg=w1280",
+      "path": "assets/nvsn/members-04.png",
+      "sha256": "ca32257dde2c157b2884ec37733cb67d1452b957e5865476a6b806b3042b4c45",
+      "bytes": 1457675
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72tdAjJ7vBlWoaeM6J9j1i-uJcz_FAOF555n85oSPTUZM2JrvE4mVtgnnL6TAl8nk5OJ7AbraDHLAawvP9mhOAB6XhUIrkDmRvoeJd3X6mjQdqxWBTOmIf0G0INXlbhSyaeyWGJoVrYiKrvGaPN-AMIAMW5SgPCW-udRrYjKHWMwQbVpUkVNwArvQthQ7GfImsZlQG8r-DKvuXMf8JZpk8CYzBeSKGEgobwK15VZpJI=w1280",
+      "path": "assets/nvsn/members-06.png",
+      "sha256": "27c6f38d5c498be54ffa519d4955204e835a37b272dcb784374a170c743c9da6",
+      "bytes": 526715
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72sK5uAHuw5S7fZw0Fovhz6Nsa913gPAflu5IMY0XI0MZx6eoaR9hKMFozrCtpjTYW7V_CoWWoN5diaxPihR2xNPPZ39cch8yzoG4l-_UyLFpE5wrWAbqGDNWL3StM4vgwBie_W7E_vrEnxHrFzqsFtZfqfv_DS4134jxPPCPqhCuGUgbCbx2TiMY6T9kpjM5uyhVgdgCg4FJnwck7ih-P7-tWUYKmhVXTnR1qLcwpg=w1280",
+      "path": "assets/nvsn/members-07.png",
+      "sha256": "cc19ed506311ebaf554a6b90630e0f112342b39e4c8d36694f3a4ad4ee058ee5",
+      "bytes": 74420
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72s9eevj_A0A3r0JX2JMoH4C6rnP2QnsJKBPxQ7PxBKgVh8dI0LGVuBJi5uSrjcoz9v34fgHoHJDWXfXS9r1T6NGlZzSIY5g0pSNMidHwtwCRMh0HgvbperJQ7T4_I4a8NB6cQhbPXU1xRvDowxsz8Q16Jvw3Y6iLmRzXHiQdTDBTqkJ37kl8LQvmOBGKHoFGmy3lfDV5PRfX6wAS6qHA1PGecYFD2iADaNBbiY1=w1280",
+      "path": "assets/nvsn/members-08.png",
+      "sha256": "ca32257dde2c157b2884ec37733cb67d1452b957e5865476a6b806b3042b4c45",
+      "bytes": 1457675
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72sHX4mTjHoRovV2gIL8pBtZdyhUDBRq3qvTJFYQtkdNbTTm8Kz-1HxBC8bCogTbh9gCIIggnQEblFYeFfxMY0ufSJ_dWdcoC4H4kpeuGhmu1RBIuWdO0tsOlr99A8oY6q-2iutMIVvqwjfgKOIGj9Ul7WgcAuOD3eC4mzcJWeTGUxAV6jQ-b3-ZOTFMT4cCNAegaGjofjKdcJp0LrnNc2nzLiMq2OIcmpKkbMXOwuc=w1280",
+      "path": "assets/nvsn/members-09.jpg",
+      "sha256": "3d4995b71f951302a64bc702ee3439ef7be5e22d5270df5a0ae64bb693939068",
+      "bytes": 101876
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72sfJWOJnm3XEv1u8hMRDEk_0tHBp5eLJCwbCepRYszWrVONll-r0ggSIEDq_t5uiKnRfhYHwMkaEGfzHzzRikEy5w2UWp6vjv0opCJx99IcQldoxsHYGB3yj7y8gKNmzwl_xkgjPWCqqJVNMl5CFDPNjBvq2ot-ElTkgJQVla1xI9eu72w3LVhs3DkdSe_ySV_E5j7Qfgtyn_ny_AtR_ff7oROkRShENL70iNRNTxk=w1280",
+      "path": "assets/nvsn/members-11.png",
+      "sha256": "496e9a6791f4850835145dec7d4c563395321aa971ee750792e7ef777855fe68",
+      "bytes": 37953
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72vzGQ2Y1vAGsZEH1fWB5vGsdt7OaGO7QY5jf01hX6ABwZTL4stz3Hxfra7tOHLvvgFdMlRmzEbNSmpLmTl04i_0hRNQKsqMHo-0uBMdNWatPge5nJjT8gM8qNkSH1f114wgZojRo0-R7SqzVQvXweBixRQlGRUocxRE900EY54P4gzhw3OD0xV13tETfSXKSle3i3K-3WqwGCF-WHBpRXZIgceO7mNMkgbv-qe99qY=w1280",
+      "path": "assets/nvsn/members-12.png",
+      "sha256": "092605a8c57a5375a1a059eb3cfce2e53d3327516697f8180561fbc52758b3c0",
+      "bytes": 920598
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72tF6Rsazjq6F_8h1dkmy497M0H9ZAB3Pt2wld5oP_A8GJEopS8mVrqwG9s5lIUbMEBM8AUwY1bLWHcQvhH_3QGSFbR-spBKb9jV1V8kOVgAcT_PU2UHSuVAQY1laWkKHPKKIc8LJN7aC9xPNH6UOuFr_2y9bbaltmmod2X6lBWOEkzm3_eHJKYXkqlt_0TW7jpVslIVEQn_MTuLu0u7f6TuW-hmxeSyz9NHkkfTGh0=w1280",
+      "path": "assets/nvsn/members-15.png",
+      "sha256": "93173abdda245b618fd00657bc2331b3fd4b40875e4cb267fe194498fc8ff77f",
+      "bytes": 349640
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72vBOIsJj9lqEmzmQnPGsiP9x2es67SmWsCv5IRhPfhUthLoi8cUTf2CEocRi2CJZ2mgzY-fXHSK0mZZMwIxqts2JWjeXdyQXOjdtPhCa8-F4LUaNZuiD4-vyp1xsOW2V7fFItWRR3xEU9HnWbXnXeYDCA8-W2423hh26LjeFudpnqIqBLB8noR0cB4F7sw=w2560",
+      "source_page": "https://sites.google.com/view/nvsn/meetings",
+      "path": "assets/nvsn/meetings-header.jpg",
+      "sha256": "94514e85ed487cf4e3b486be9045056f3d1180d294785d2109209e96d2da2347",
+      "bytes": 795993,
+      "role": "original meeting header"
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72uwSiXBNNVO0TEjj33rvzMZ6jcSR57-bM6pBEKvsk1MhPUlEsy75el7_RFCjmUHg43dlKFZYBCpGkRK7GGqii7t1LVhSFxe1dle78cQD54zHfhNC0NUfIsaI-4ZL0auBvWF3mH8sCJ2wB0WdikXtinw5ekWOaYd9qIvzPz8Ho1M0crOmKKGw70MqQCSW14=w2560",
+      "source_page": "https://sites.google.com/view/nvsn/meetings/nvsn-meeting-2025",
+      "path": "assets/nvsn/meeting-2025-header.png",
+      "sha256": "eea3a3ebc8a4b310074f3d9bc01aa83041a1a9ed1c27646bcf52d33c8ee30d7d",
+      "bytes": 2263225,
+      "role": "original meeting header"
+    },
+    {
+      "source": "https://sites.google.com/sitesv-images-rt/AMxu72sElC1_ER4R_ItDzXRm85CMf0gwl9JNOegkxUVFyCGCFtb57JUs7WY5T6XHRSlJrLR2LsHe1VLuQSd0OFr1zoF_zKi4TNY8yK2OR9J9HG2Yjdafzd425sEX2dUERimE-KmCwsdUcv15rotQ2bR4PvqgHyuOGBxBCLeHQRI3TIVXFmwlqfjpWUirwGsgWXU=w2560",
+      "source_page": "https://sites.google.com/view/nvsn/meetings/nvsn-meeting-2026",
+      "path": "assets/nvsn/meeting-2026-header.png",
+      "sha256": "95f8a1e634e99363e32a7fc525134065858965ccb3fa65a071e2b7b925664006",
+      "bytes": 2601991,
+      "role": "original meeting header"
+    }
+  ],
+  "notes": [
+    "Published 2026 programme placeholders retained.",
+    "Bergen programme room differences retained: Thursday Room 110, other days Rooms 217–218.",
+    "Source affiliation differences retained: Dreneva Lab at Aarhus, steering profile at Danish Technical University."
+  ],
+  "generated_images_manifest": "assets/nvsn/generated-images.json"
+}
